@@ -15,13 +15,18 @@ const equipmentSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    gainings: {
+    gains: {
         type: Number,
         required: true
     },
     costGainingMultiplier: {
         type: Number,
         required: true
+    },
+    faction: {
+        type: String,
+        required: true,
+        enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
     }
 });
 

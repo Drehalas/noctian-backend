@@ -10,6 +10,11 @@ const ladderSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
+    },
+    faction: {
+        type: String,
+        required: true,
+        enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc'] // List of all factions
     }
 });
 

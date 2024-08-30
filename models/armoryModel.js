@@ -15,7 +15,7 @@ const armorySchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    gainings: {
+    gains: {
         type: Number,
         required: true
     },
