@@ -13,7 +13,13 @@ app.use(bodyParser.json());
 // Connect to MongoDB
 connectDB();
 
-// Define a simple route for testing
+// Existing routes
+// app.use('/api/factions', factionRoutes);
+// app.use('/api/games', gameRoutes);
+// app.use('/api/users', userRoutes);
+// app.use('/api/friends', friendRoutes);
+// app.use('/api/artifacts', artifactRoutes);
+// app.use('/api/skillbuffs', skillBuffRoutes);
 app.get('/', (req, res) => {
     res.send('Hello, Noctian Universe!');
 });
