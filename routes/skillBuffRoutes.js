@@ -2,19 +2,19 @@ const express = require('express');
 const router = express.Router();
 const skillBuffController = require('../controllers/skillBuffController');
 
-// Route to get all SkillBuffs
+// GET all skill buffs
 router.get('/', skillBuffController.getAllSkillBuffs);
 
-// Route to get a single SkillBuff by ID
+// GET single skill buff by ID
 router.get('/:id', skillBuffController.getSkillBuffById);
 
-// Route to create a new SkillBuff
+// POST new skill buff
 router.post('/', skillBuffController.createSkillBuff);
 
-// Route to update a SkillBuff by ID
+// PUT update skill buff by ID
 router.put('/:id', skillBuffController.updateSkillBuff);
 
-// Route to delete a SkillBuff by ID
+// DELETE skill buff by ID
 router.delete('/:id', skillBuffController.deleteSkillBuff);
 
 module.exports = router;
