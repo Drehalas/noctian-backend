@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "name": "Warcry Energy",
+    "description": "A channeled spell that gradually increases the damage and attack speed of nearby Orc units.",
+    "cost": 1139,
+    "gains": 80,
+    "costGainingMultiplier": 1.3,
+    "faction": "Orc"
+  },
+  {
+    "id": "2",
+    "name": "Green Tide",
+    "description": "Summons a horde of lesser Orcs to swarm and overwhelm the enemy.",
+    "cost": 2164,
+    "gains": 152,
+    "costGainingMultiplier": 1.3,
+    "faction": "Orc"
+  }
+  // Additional spells as needed
+]

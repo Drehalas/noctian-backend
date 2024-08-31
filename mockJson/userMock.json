@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "username": "OrcWarlord",
+    "email": "orcwarlord@example.com",
+    "password": "hashed_password",
+    "faction": "Orc",
+    "created_at": "2024-09-01T12:34:56Z",
+    "updated_at": "2024-09-01T12:34:56Z"
+  },
+  {
+    "id": "2",
+    "username": "ElfMage",
+    "email": "elfmage@example.com",
+    "password": "hashed_password",
+    "faction": "Elf",
+    "created_at": "2024-09-01T12:34:56Z",
+    "updated_at": "2024-09-01T12:34:56Z"
+  }
+  // Additional users as needed
+]

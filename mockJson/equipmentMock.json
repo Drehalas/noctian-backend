@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "name": "Iron Sword",
+    "description": "A basic iron sword for new recruits.",
+    "cost": 1000,
+    "gains": 100,
+    "level": 1,
+    "costMultiplier": 1.2
+  },
+  {
+    "id": "2",
+    "name": "Steel Shield",
+    "description": "A sturdy steel shield that provides good defense.",
+    "cost": 2500,
+    "gains": 200,
+    "level": 1,
+    "costMultiplier": 1.2
+  }
+  // Additional equipment items as needed
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "Multi Attack",
+    "description": "With more power comes more responsibility. The more you attack, the more mana you spend.",
+    "cost": 100,
+    "gains": 1,
+    "level": 0,
+    "costMultiplier": 1.5,
+    "totalSkillGain": 1,
+    "cooldown": null,
+    "refresh": null
+  },
+  {
+    "id": "2",
+    "name": "Mana Pool",
+    "description": "By increasing your mana pool, you can make more attacks.",
+    "cost": 100,
+    "gains": 500,
+    "level": 0,
+    "costMultiplier": 1.5,
+    "totalSkillGain": 1000,
+    "cooldown": null,
+    "refresh": null
+  }
+  // Additional skills and buffs as needed
+]

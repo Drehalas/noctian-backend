@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "name": "Kobold Slave",
+    "description": "Weakest unit, used as meat shields.",
+    "cost": 506,
+    "gains": 30,
+    "costGainingMultiplier": 1.05,
+    "faction": "Orc"
+  },
+  {
+    "id": "2",
+    "name": "Goblin Archer",
+    "description": "Weak and fast ranged units.",
+    "cost": 1341,
+    "gains": 80,
+    "costGainingMultiplier": 1.05,
+    "faction": "Orc"
+  }
+  // Additional soldiers as needed
+]

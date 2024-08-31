@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "name": "The Crown of the First King",
+    "description": "This ancient crown grants enhanced leadership abilities.",
+    "cost": 19175106,
+    "gains": 3835021,
+    "costGainingMultiplier": 2,
+    "faction": "Human"
+  },
+  {
+    "id": "2",
+    "name": "The Blade of the Crusader",
+    "description": "This legendary sword grants increased strength and holy attacks.",
+    "cost": 402677224,
+    "gains": 80535445,
+    "costGainingMultiplier": 2,
+    "faction": "Human"
+  }
+  // Additional artifacts as needed
+]

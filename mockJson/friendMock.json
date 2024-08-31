@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "name": "Peon",
+    "faction": "Orc"
+  },
+  {
+    "id": "2",
+    "name": "Squire",
+    "faction": "Human"
+  }
+  // Additional friends as needed
+]

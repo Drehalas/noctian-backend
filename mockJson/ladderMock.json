@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "rank": 1,
+    "playerName": "OrcWarrior",
+    "points": 5000,
+    "faction": "Orc"
+  },
+  {
+    "id": "2",
+    "rank": 2,
+    "playerName": "ElfArcher",
+    "points": 4800,
+    "faction": "Elf"
+  }
+  // Additional ladder entries as needed
+]
