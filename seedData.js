@@ -1130,7 +1130,109 @@ const friendData = [
         addFriendName: 'Acolyte',
     }
 ];
+// seedData.js
 
+const skillBuffData = [
+    {
+        name: 'Multi Attack',
+        description: 'With more power comes more responsibility. when more you attack, the more mana you spend.',
+        cost: '100',
+        gains: '1',
+        level: 0,
+        costMultiplier: 1.5,
+        totalSkillGain: '1',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: 'Mana Pool',
+        description: 'By increasing your mana pool, you can make more attacks.',
+        cost: '100',
+        gains: '500',
+        level: 0,
+        costMultiplier: 1.5,
+        totalSkillGain: '1000',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: 'Attack Crit Chance',
+        description: 'Increase your critical strike chance to earn more loot with just one click.',
+        cost: '200',
+        gains: '1',
+        level: 0,
+        costMultiplier: 1.5,
+        totalSkillGain: '1 %',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: 'Attack Crit Income',
+        description: 'You can increase the loot you get from critical attacks by increasing your critical damage.',
+        cost: '400',
+        gains: '10',
+        level: 0,
+        costMultiplier: 1.5,
+        totalSkillGain: '10 %',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: 'Mana Potion',
+        description: "You can refill your Mana pool by drinking the potion, but remember, you can't drink it consecutively.",
+        cost: '6/6',
+        gains: 'Restore full mana',
+        level: 0,
+        costMultiplier: 1,
+        totalSkillGain: '',
+        cooldown: '2 hour',
+        refresh: '24 hour',
+    },
+    {
+        name: "Magic God's Blood Potion",
+        description: 'With this powerful potion, your mana pool will now regenerate faster.',
+        cost: '0.7 Ton',
+        gains: '1',
+        level: 0,
+        costMultiplier: 1,
+        totalSkillGain: '3 per sec',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: "Hero's Pocket Portal",
+        description: "Thanks to this item, you will no longer have to carry your loot. You will see that the income from your attacks will increase.",
+        cost: '0.7 Ton',
+        gains: '5',
+        level: 0,
+        costMultiplier: 1,
+        totalSkillGain: '0 %',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: "Army's Raid Portal",
+        description: "It's one thing to raid, it's another thing for your army to carry it. With this item, you'll see your army's raid income increase.",
+        cost: '0.7 Ton',
+        gains: '5',
+        level: 0,
+        costMultiplier: 1,
+        totalSkillGain: '0 %',
+        cooldown: '',
+        refresh: '',
+    },
+    {
+        name: "The Ancient's Transformation Ritual",
+        description: 'This ritual can transform you completely into a creature from another faction, but the ingredients for the spell are really hard to find.',
+        cost: '10 Ton',
+        gains: 'Faction reset',
+        level: 0,
+        costMultiplier: 1,
+        totalSkillGain: '',
+        cooldown: '',
+        refresh: '',
+    },
+];
 // Function to seed the database
 const seedDatabase = async () => {
     try {
@@ -1140,6 +1242,8 @@ const seedDatabase = async () => {
         await Spell.deleteMany({});
         await Artifact.deleteMany({});
         await Friend.deleteMany({});
+        await SkillBuff.deleteMany({}); // Clear existing Skill & Buff data
+
 
         await Ladder.insertMany(ladderData);
         console.log('Ladders seeded successfully!');
@@ -1158,6 +1262,9 @@ const seedDatabase = async () => {
 
         await Friend.insertMany(friendData);
         console.log('Friends seeded successfully!');
+
+        await SkillBuff.insertMany(skillBuffData); // Insert new Skill & Buff data
+        console.log('Skill & Buffs seeded successfully!');
 
         mongoose.connection.close();
         console.log('Database seeding completed and connection closed.');
