@@ -1,36 +1,25 @@
 const mongoose = require('mongoose');
 
-// Equipment Schema
-const heroSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    cost: {
-        type: Number,
-        required: true
-    },
-    gains: {
-        type: Number,
-        required: true
-    },
-    costGainingMultiplier: {
-        type: Number,
-        required: true
-    },
-    faction: {
-        type: String,
-        required: true,
-        enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
-    }
+// Define a schema for individual items (equipment)
+const equipmentSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    cost: { type: Number, required: true },
+    gains: { type: Number, required: true },
+    level: { type: Number, default: 0 },
+    costMultiplier: { type: Number, required: true },
+    imageUrl: { type: String, required: true },
+    raidIncomePerHour: { type: Number, default: 0 },
 });
 
-// Equipment Model
+// Define the main Hero schema
+const heroSchema = new mongoose.Schema({
+    userId: { type: String, required: true },  // Link hero to a user
+    factionType: { type: String, required: true },
+    currentGold: { type: Number, required: true },
+    items: [equipmentSchema],  // Array of equipment/items the hero has
+});
+
 const Hero = mongoose.model('Hero', heroSchema);
 
 module.exports = Hero;
