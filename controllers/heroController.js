@@ -1,3 +1,8 @@
+export let deleteEquipment = undefined;
+export let updateEquipment = undefined;
+export let createEquipment = undefined;
+export let getEquipmentById = undefined;
+export let getAllEquipments = undefined;
 const Hero = require('../models/heroModel');
 
 // Get hero details for a specific user

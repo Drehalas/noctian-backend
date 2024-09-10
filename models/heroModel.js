@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-// Equipment Schema
-const equipmentSchema = new mongoose.Schema({
+const heroSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -31,6 +30,6 @@ const equipmentSchema = new mongoose.Schema({
 });
 
 // Equipment Model
-const Equipment = mongoose.model('Equipment', equipmentSchema);
+const Hero = mongoose.model('Hero', heroSchema);
 
-module.exports = Equipment;
+module.exports = Hero;

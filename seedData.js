@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Ladder = require('./models/ladderModel');
-const Equipment = require('./models/equipmentModel');
+const Hero = require('./models/heroModel');
 const Soldier = require('./models/soldierModel');
 const Spell = require('./models/spellModel');
 const Artifact = require('./models/artifactModel');
@@ -152,7 +152,7 @@ const ladderData = [
 
 ];
 
-const equipmentData = [
+const heroData = [
     // Faction: Orc
     { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'Orc' },
     { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'Orc' },
