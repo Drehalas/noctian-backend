@@ -1,7 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
-// Equipment Schema
-const heroSchema = new mongoose.Schema({
+const heroUserSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -27,10 +26,20 @@ const heroSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
-    }
+    },
+    level: {
+        type: Number,
+        default: 1,
+    },
+    experience: {
+        type: Number,
+        default: 0,
+    },
+    ItemList:{
+        type: String,
+        required: true,
+        enum: ['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6']
+    },
 });
 
-// Equipment Model
-const Hero = mongoose.model('Hero', heroSchema);
-
-module.exports = Hero;
+const HeroUser = mongoose.model('HeroUser', heroUserSchema);
