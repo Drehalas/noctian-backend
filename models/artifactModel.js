@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 
 // Artifact Schema
 const artifactSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        required: true
+    },
     name: {
         type: String,
         required: true,
@@ -27,6 +31,14 @@ const artifactSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
+    },
+    imageUrl: {
+        type: String,
+        required: true
+    },
+    raidIncomePerHour: {
+        type: Number,
+        default: 0
     }
 });
 

@@ -1,20 +1,32 @@
 const express = require('express');
 const router = express.Router();
-const artifactController = require('../controllers/artifactController');
+const Artifact = require('../models/artifactModel');
 
-// Route to get all artifacts
-router.get('/', artifactController.getAllArtifacts);
+// POST route to create a new artifact
+router.post('/artifacts', async (req, res) => {
+    try {
+        const { id, name, description, cost, gains, costGainingMultiplier, faction, imageUrl, raidIncomePerHour } = req.body;
 
-// Route to create a new artifact
-router.post('/', artifactController.createArtifact);
+        const newArtifact = new Artifact({
+            id,
+            name,
+            description,
+            cost,
+            gains,
+            costGainingMultiplier,
+            faction,
+            imageUrl,
+            raidIncomePerHour
+        });
 
-// Route to get a specific artifact by ID
-router.get('/:id', artifactController.getArtifactById);
-
-// Route to update an artifact by ID
-router.put('/:id', artifactController.updateArtifact);
-
-// Route to delete an artifact by ID
-router.delete('/:id', artifactController.deleteArtifact);
+        await newArtifact.save();
+        res.status(201).json({ message: 'Artifact created successfully', artifact: newArtifact });
+    } catch (error) {
+        if (error.code === 11000) {
+            return res.status(400).json({ message: 'Artifact name must be unique' });
+        }
+        res.status(500).json({ message: 'Server error', error });
+    }
+});
 
 module.exports = router;

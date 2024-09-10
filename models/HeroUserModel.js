@@ -35,11 +35,10 @@ const heroUserSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    ItemList:{
-        type: String,
-        required: true,
-        enum: ['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6']
-    },
+    items: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Item' // Refers to the Item model
+    }]
 });
 
 const HeroUser = mongoose.model('HeroUser', heroUserSchema);
