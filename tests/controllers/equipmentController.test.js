@@ -34,7 +34,7 @@ describe('Equipment Controller', () => {
             cost: 100,
             gains: 8,
             costGainingMultiplier: 1.2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         expect(res.statusCode).toEqual(201);
@@ -52,7 +52,7 @@ describe('Equipment Controller', () => {
             cost: 100,
             gains: 8,
             costGainingMultiplier: 1.2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).get('/api/equipment');
@@ -71,7 +71,7 @@ describe('Equipment Controller', () => {
             cost: 150,
             gains: 12,
             costGainingMultiplier: 1.2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).get(`/api/equipment/${equipment._id}`);
@@ -89,7 +89,7 @@ describe('Equipment Controller', () => {
             cost: 225,
             gains: 18,
             costGainingMultiplier: 1.2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server)
@@ -109,7 +109,7 @@ describe('Equipment Controller', () => {
             cost: 338,
             gains: 27,
             costGainingMultiplier: 1.2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).delete(`/api/equipment/${equipment._id}`);

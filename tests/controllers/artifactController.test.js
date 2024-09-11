@@ -15,7 +15,7 @@ describe('Artifact Controller', () => {
             cost: 19175106,
             gains: 3835021,
             costGainingMultiplier: 2,
-            faction: 'Human',
+            faction: HUMAN,
         });
         artifactId = artifact._id;
     });
@@ -48,7 +48,7 @@ describe('Artifact Controller', () => {
                 cost: 8456221712,
                 gains: 1691244342,
                 costGainingMultiplier: 2,
-                faction: 'Human',
+                faction: HUMAN,
             });
 
         expect(res.statusCode).toEqual(201);

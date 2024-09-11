@@ -14,7 +14,7 @@ describe('Faction Model Test', () => {
 
     it('should create & save a faction successfully', async () => {
         const factionData = {
-            name: 'Orc',
+            name: 'ORC',
             description: 'A brutish and aggressive faction.',
         };
 
@@ -27,7 +27,7 @@ describe('Faction Model Test', () => {
     });
 
     it('should fail to create a faction without required fields', async () => {
-        const factionWithoutRequiredField = new Faction({ name: 'Elf' });
+        const factionWithoutRequiredField = new Faction({ name: ELF });
         let err;
         try {
             await factionWithoutRequiredField.save();

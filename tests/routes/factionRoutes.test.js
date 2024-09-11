@@ -23,20 +23,20 @@ describe('Faction Routes', () => {
     describe('POST /api/factions', () => {
         it('should create a new faction', async () => {
             const newFaction = {
-                name: 'Orc',
+                name: 'ORC',
                 description: 'A fierce and warlike faction',
             };
 
             const response = await request(server).post('/api/factions').send(newFaction);
             expect(response.status).toBe(201);
-            expect(response.body.name).toBe('Orc');
+            expect(response.body.name).toBe('ORC');
         });
     });
 
     describe('GET /api/factions/:id', () => {
         it('should fetch a single faction by ID', async () => {
             const faction = new Faction({
-                name: 'Elf',
+                name: ELF,
                 description: 'A wise and mystical faction',
             });
 
@@ -44,14 +44,14 @@ describe('Faction Routes', () => {
 
             const response = await request(server).get(`/api/factions/${faction._id}`);
             expect(response.status).toBe(200);
-            expect(response.body.name).toBe('Elf');
+            expect(response.body.name).toBe(ELF);
         });
     });
 
     describe('PUT /api/factions/:id', () => {
         it('should update an existing faction', async () => {
             const faction = new Faction({
-                name: 'Human',
+                name: HUMAN,
                 description: 'A faction known for their versatility and resilience',
             });
 
@@ -71,7 +71,7 @@ describe('Faction Routes', () => {
     describe('DELETE /api/factions/:id', () => {
         it('should delete an existing faction', async () => {
             const faction = new Faction({
-                name: 'Undead',
+                name: UNDEAD,
                 description: 'A dark and feared faction',
             });
 

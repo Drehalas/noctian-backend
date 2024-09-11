@@ -27,7 +27,7 @@ describe('Ladder Controller', () => {
         const res = await request(server).post('/api/ladder').send({
             ladderName: 'Great Warchief',
             level: 1,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         expect(res.statusCode).toEqual(201);
@@ -38,7 +38,7 @@ describe('Ladder Controller', () => {
     });
 
     it('should retrieve all ladder entries', async () => {
-        await Ladder.create({ ladderName: 'Great Warchief', level: 1, faction: 'Orc' });
+        await Ladder.create({ ladderName: 'Great Warchief', level: 1, faction: 'ORC' });
 
         const res = await request(server).get('/api/ladder');
 
@@ -52,7 +52,7 @@ describe('Ladder Controller', () => {
         const ladder = await Ladder.create({
             ladderName: 'Warchief',
             level: 2,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).get(`/api/ladder/${ladder._id}`);
@@ -66,7 +66,7 @@ describe('Ladder Controller', () => {
         const ladder = await Ladder.create({
             ladderName: 'High Warlord',
             level: 3,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server)
@@ -82,7 +82,7 @@ describe('Ladder Controller', () => {
         const ladder = await Ladder.create({
             ladderName: 'Chieftain',
             level: 6,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).delete(`/api/ladder/${ladder._id}`);

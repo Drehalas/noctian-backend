@@ -18,7 +18,7 @@ describe('Spell Model Test', () => {
             cost: 1139,
             gains: 80,
             costGainingMultiplier: 1.3,
-            faction: 'Human',
+            faction: HUMAN,
         };
 
         const validSpell = new Spell(spellData);

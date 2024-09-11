@@ -29,13 +29,13 @@ describe('Faction Controller', () => {
     // Test to create a new faction
     it('should create a new faction', async () => {
         const res = await request(server).post('/api/factions').send({
-            name: 'Orc',
+            name: 'ORC',
             description: 'A fierce and brutal faction known for their strength.',
         });
 
         expect(res.statusCode).toEqual(201);
         expect(res.body).toHaveProperty('faction');
-        expect(res.body.faction.name).toBe('Orc');
+        expect(res.body.faction.name).toBe('ORC');
 
         factionId = res.body.faction._id; // Store faction ID for later use
     });
@@ -52,7 +52,7 @@ describe('Faction Controller', () => {
     // Test to retrieve a faction by its ID
     it('should get a faction by ID', async () => {
         const faction = await Faction.create({
-            name: 'Elf',
+            name: ELF,
             description: 'A wise and magical faction known for their archery skills.',
         });
 
@@ -60,13 +60,13 @@ describe('Faction Controller', () => {
 
         expect(res.statusCode).toEqual(200);
         expect(res.body).toHaveProperty('faction');
-        expect(res.body.faction.name).toBe('Elf');
+        expect(res.body.faction.name).toBe(ELF);
     });
 
     // Test to update an existing faction
     it('should update an existing faction', async () => {
         const faction = await Faction.create({
-            name: 'Undead',
+            name: UNDEAD,
             description: 'A terrifying faction that commands the forces of the dead.',
         });
 
@@ -82,7 +82,7 @@ describe('Faction Controller', () => {
     // Test to delete a faction
     it('should delete a faction', async () => {
         const faction = await Faction.create({
-            name: 'Demon',
+            name: DEMON,
             description: 'A chaotic faction known for their dark powers and magic.',
         });
 

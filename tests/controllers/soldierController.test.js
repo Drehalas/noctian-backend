@@ -29,7 +29,7 @@ describe('Soldier Controller', () => {
             description: 'Standard melee units.',
             cost: 24954,
             gains: 1479,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         expect(res.statusCode).toEqual(201);
@@ -45,7 +45,7 @@ describe('Soldier Controller', () => {
             description: 'Standard melee units.',
             cost: 24954,
             gains: 1479,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).get('/api/soldier');
@@ -62,7 +62,7 @@ describe('Soldier Controller', () => {
             description: 'Effective against infantry.',
             cost: 66127,
             gains: 3921,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).get(`/api/soldier/${soldier._id}`);
@@ -78,7 +78,7 @@ describe('Soldier Controller', () => {
             description: 'High damage melee units.',
             cost: 175237,
             gains: 10390,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server)
@@ -96,7 +96,7 @@ describe('Soldier Controller', () => {
             description: 'High ranged damage.',
             cost: 464378,
             gains: 27532,
-            faction: 'Orc',
+            faction: 'ORC',
         });
 
         const res = await request(server).delete(`/api/soldier/${soldier._id}`);

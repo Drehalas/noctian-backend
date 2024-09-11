@@ -7,7 +7,7 @@ describe('Friend Controller', () => {
     let friendId;
 
     beforeAll(async () => {
-        const friend = await Friend.create({ name: 'Peon', faction: 'Orc' });
+        const friend = await Friend.create({ name: 'Peon', faction: 'ORC' });
         friendId = friend._id;
     });
 
@@ -25,7 +25,7 @@ describe('Friend Controller', () => {
     it('should add a new friend', async () => {
         const res = await request(server)
             .post('/api/friends')
-            .send({ name: 'Squire', faction: 'Human' });
+            .send({ name: 'Squire', faction: HUMAN });
 
         expect(res.statusCode).toEqual(201);
         expect(res.body).toHaveProperty('friend');

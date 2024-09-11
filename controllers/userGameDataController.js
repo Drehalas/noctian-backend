@@ -1,4 +1,4 @@
-const UserGameData = require('../models/userGameDataModel');
+const UserGameData = require('../models/modelCombinations/userGameDataModel');
 
 const getUserGameData = async (req, res) => {
     try {

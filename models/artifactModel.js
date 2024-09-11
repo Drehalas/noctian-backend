@@ -30,7 +30,7 @@ const artifactSchema = new mongoose.Schema({
     faction: {
         type: String,
         required: true,
-        enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
+        enum: ['HUMAN', 'UNDEAD', 'ANGEL', 'DEMON', 'ELF', 'ORC']
     },
     raidIncomePerHour: {
         type: Number,

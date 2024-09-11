@@ -14,7 +14,7 @@ const ladderSchema = new mongoose.Schema({
     faction: {
         type: String,
         required: true,
-        enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc'] // List of all factions
+        enum: ['HUMAN', 'UNDEAD', 'ANGEL', 'DEMON', 'ELF', 'ORC'] // List of all factions
     }
 });
 

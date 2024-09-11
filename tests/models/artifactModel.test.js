@@ -19,7 +19,7 @@ describe('Artifact Model Test', () => {
             cost: 19175106,
             gains: 3835021,
             costGainingMultiplier: 2,
-            faction: 'Human',
+            faction: HUMAN,
         };
 
         const validArtifact = new Artifact(artifactData);

@@ -29,7 +29,7 @@ describe('Spell Controller', () => {
             description: 'Hurls a fiery projectile that explodes on impact, dealing area damage',
             cost: 1139,
             gains: 80,
-            faction: 'Human',
+            faction: HUMAN,
             costGainingMultiplier: 1.3,
         });
 
@@ -46,7 +46,7 @@ describe('Spell Controller', () => {
             description: 'Hurls a fiery projectile that explodes on impact, dealing area damage',
             cost: 1139,
             gains: 80,
-            faction: 'Human',
+            faction: HUMAN,
             costGainingMultiplier: 1.3,
         });
 
@@ -64,7 +64,7 @@ describe('Spell Controller', () => {
             description: 'A swift bolt of lightning that strikes a single enemy, dealing high damage',
             cost: 2164,
             gains: 152,
-            faction: 'Human',
+            faction: HUMAN,
             costGainingMultiplier: 1.3,
         });
 
@@ -81,7 +81,7 @@ describe('Spell Controller', () => {
             description: 'A piercing shard of ice that pierces through multiple enemies',
             cost: 4112,
             gains: 289,
-            faction: 'Human',
+            faction: HUMAN,
             costGainingMultiplier: 1.3,
         });
 
@@ -100,7 +100,7 @@ describe('Spell Controller', () => {
             description: 'Unleashes a volley of arrows that rain down on a target area',
             cost: 7812,
             gains: 549,
-            faction: 'Human',
+            faction: HUMAN,
             costGainingMultiplier: 1.3,
         });
 

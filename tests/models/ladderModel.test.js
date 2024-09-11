@@ -13,7 +13,7 @@ describe('Ladder Model Test', () => {
 
     it('should create & save a ladder rank successfully', async () => {
         const ladderData = {
-            faction: 'Orc',
+            faction: 'ORC',
             rankId: 1,
             rank: 'Great Warchief',
             // Add other relevant fields as per your model
@@ -29,7 +29,7 @@ describe('Ladder Model Test', () => {
     });
 
     it('should fail to create a ladder rank without required fields', async () => {
-        const ladderWithoutRequiredField = new Ladder({ faction: 'Orc' });
+        const ladderWithoutRequiredField = new Ladder({ faction: 'ORC' });
         let err;
         try {
             await ladderWithoutRequiredField.save();

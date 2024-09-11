@@ -18,7 +18,7 @@ describe('Soldier Model Test', () => {
             cost: 24954,
             gains: 1479,
             costGainingMultiplier: 1.05,
-            faction: 'Orc',
+            faction: 'ORC',
         };
 
         const validSoldier = new Soldier(soldierData);

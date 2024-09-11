@@ -14,7 +14,7 @@ describe('Friend Model Test', () => {
     it('should create & save a friend successfully', async () => {
         const friendData = {
             name: 'Peon',
-            faction: 'Orc',
+            faction: 'ORC',
         };
 
         const validFriend = new Friend(friendData);
