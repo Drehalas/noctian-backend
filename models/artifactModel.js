@@ -32,10 +32,6 @@ const artifactSchema = new mongoose.Schema({
         required: true,
         enum: ['Human', 'Undead', 'Angel', 'Demon', 'Elf', 'Orc']
     },
-    imageUrl: {
-        type: String,
-        required: true
-    },
     raidIncomePerHour: {
         type: Number,
         default: 0

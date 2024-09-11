@@ -3,10 +3,6 @@
 const mongoose = require('mongoose');
 
 const skillBuffSchema = new mongoose.Schema({
-    id: {
-        type: String,
-        required: true
-    },
     name: {
         type: String,
         required: true,
@@ -39,14 +35,6 @@ const skillBuffSchema = new mongoose.Schema({
     },
     refresh: {
         type: String, // String to accommodate time formats like "24 hour"
-    },
-    imageUrl: {
-        type: String,
-        required: true
-    },
-    iconSrc: {
-        type: String,
-        required: true
     }
 });
 

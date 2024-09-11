@@ -5,6 +5,7 @@ const Soldier = require('./models/soldierModel');
 const Spell = require('./models/spellModel');
 const Artifact = require('./models/artifactModel');
 const Friend = require('./models/friendModel');
+const SkillBuff = require('./models/skillBuffModel'); // Adjust path as needed
 require('dotenv').config();
 
 // Connect to MongoDB
@@ -19,142 +20,142 @@ mongoose.connect(process.env.MONGODB_URI, {
 // Ladder Data for seeding
 const ladderData = [
     // Faction: Orc
-    { ladderId: 1, name: 'Great Warchief', faction: 'Orc' },
-    { ladderId: 2, name: 'Warchief', faction: 'Orc' },
-    { ladderId: 3, name: 'High Warlord', faction: 'Orc' },
-    { ladderId: 4, name: 'Warlord', faction: 'Orc' },
-    { ladderId: 5, name: 'Warmaster', faction: 'Orc' },
-    { ladderId: 6, name: 'Chieftain', faction: 'Orc' },
-    { ladderId: 7, name: 'Blood Guard', faction: 'Orc' },
-    { ladderId: 8, name: 'Slayer', faction: 'Orc' },
-    { ladderId: 9, name: 'Raider', faction: 'Orc' },
-    { ladderId: 10, name: 'Brute', faction: 'Orc' },
-    { ladderId: 11, name: 'Berserker', faction: 'Orc' },
-    { ladderId: 12, name: 'Ravager', faction: 'Orc' },
-    { ladderId: 13, name: 'Marauder', faction: 'Orc' },
-    { ladderId: 14, name: 'Warrior', faction: 'Orc' },
-    { ladderId: 15, name: 'Grunt', faction: 'Orc' },
-    { ladderId: 16, name: 'Peon', faction: 'Orc' },
-    { ladderId: 17, name: 'Slave', faction: 'Orc' },
-    { ladderId: 18, name: 'Goblin', faction: 'Orc' },
-    { ladderId: 19, name: 'Beast Herder', faction: 'Orc' },
-    { ladderId: 20, name: 'Worm Food', faction: 'Orc' },
+    { ladderId: 11, name: 'Great Warchief', faction: 'Orc' },
+    { ladderId: 12, name: 'Warchief', faction: 'Orc' },
+    { ladderId: 13, name: 'High Warlord', faction: 'Orc' },
+    { ladderId: 14, name: 'Warlord', faction: 'Orc' },
+    { ladderId: 15, name: 'Warmaster', faction: 'Orc' },
+    { ladderId: 16, name: 'Chieftain', faction: 'Orc' },
+    { ladderId: 17, name: 'Blood Guard', faction: 'Orc' },
+    { ladderId: 18, name: 'Slayer', faction: 'Orc' },
+    { ladderId: 19, name: 'Raider', faction: 'Orc' },
+    { ladderId: 110, name: 'Brute', faction: 'Orc' },
+    { ladderId: 111, name: 'Berserker', faction: 'Orc' },
+    { ladderId: 112, name: 'Ravager', faction: 'Orc' },
+    { ladderId: 113, name: 'Marauder', faction: 'Orc' },
+    { ladderId: 114, name: 'Warrior', faction: 'Orc' },
+    { ladderId: 115, name: 'Grunt', faction: 'Orc' },
+    { ladderId: 116, name: 'Peon', faction: 'Orc' },
+    { ladderId: 117, name: 'Slave', faction: 'Orc' },
+    { ladderId: 118, name: 'Goblin', faction: 'Orc' },
+    { ladderId: 119, name: 'Beast Herder', faction: 'Orc' },
+    { ladderId: 120, name: 'Worm Food', faction: 'Orc' },
 
     // Faction: Human
-    { ladderId: 1, name: 'Emperor', faction: 'Human' },
-    { ladderId: 2, name: 'High King', faction: 'Human' },
-    { ladderId: 3, name: 'Archmage', faction: 'Human' },
-    { ladderId: 4, name: 'Paladin', faction: 'Human' },
-    { ladderId: 5, name: 'Duke', faction: 'Human' },
-    { ladderId: 6, name: 'Marquess', faction: 'Human' },
-    { ladderId: 7, name: 'Count', faction: 'Human' },
-    { ladderId: 8, name: 'Viscount', faction: 'Human' },
-    { ladderId: 9, name: 'Baron', faction: 'Human' },
-    { ladderId: 10, name: 'Knight Commander', faction: 'Human' },
-    { ladderId: 11, name: 'Knight', faction: 'Human' },
-    { ladderId: 12, name: 'Captain', faction: 'Human' },
-    { ladderId: 13, name: 'Lieutenant', faction: 'Human' },
-    { ladderId: 14, name: 'Sergeant', faction: 'Human' },
-    { ladderId: 15, name: 'Master Mage', faction: 'Human' },
-    { ladderId: 16, name: 'High Priest', faction: 'Human' },
-    { ladderId: 17, name: 'Squire', faction: 'Human' },
-    { ladderId: 18, name: 'Footman', faction: 'Human' },
-    { ladderId: 19, name: 'Archer', faction: 'Human' },
-    { ladderId: 20, name: 'Peasant', faction: 'Human' },
+    { ladderId: 61, name: 'Emperor', faction: 'Human' },
+    { ladderId: 62, name: 'High King', faction: 'Human' },
+    { ladderId: 63, name: 'Archmage', faction: 'Human' },
+    { ladderId: 64, name: 'Paladin', faction: 'Human' },
+    { ladderId: 65, name: 'Duke', faction: 'Human' },
+    { ladderId: 66, name: 'Marquess', faction: 'Human' },
+    { ladderId: 67, name: 'Count', faction: 'Human' },
+    { ladderId: 68, name: 'Viscount', faction: 'Human' },
+    { ladderId: 69, name: 'Baron', faction: 'Human' },
+    { ladderId: 610, name: 'Knight Commander', faction: 'Human' },
+    { ladderId: 611, name: 'Knight', faction: 'Human' },
+    { ladderId: 612, name: 'Captain', faction: 'Human' },
+    { ladderId: 613, name: 'Lieutenant', faction: 'Human' },
+    { ladderId: 614, name: 'Sergeant', faction: 'Human' },
+    { ladderId: 615, name: 'Master Mage', faction: 'Human' },
+    { ladderId: 616, name: 'High Priest', faction: 'Human' },
+    { ladderId: 617, name: 'Squire', faction: 'Human' },
+    { ladderId: 618, name: 'Footman', faction: 'Human' },
+    { ladderId: 619, name: 'Archer', faction: 'Human' },
+    { ladderId: 620, name: 'Peasant', faction: 'Human' },
 
     // Faction: Elf
-    { ladderId: 1, name: 'High Queen', faction: 'Elf' },
-    { ladderId: 2, name: 'Archdruid', faction: 'Elf' },
-    { ladderId: 3, name: 'Eldest', faction: 'Elf' },
-    { ladderId: 4, name: 'Lady of the Forest', faction: 'Elf' },
-    { ladderId: 5, name: 'Mistress of Lore', faction: 'Elf' },
-    { ladderId: 6, name: 'Guardian of the Glades', faction: 'Elf' },
-    { ladderId: 7, name: 'Keeper of the Grove', faction: 'Elf' },
-    { ladderId: 8, name: 'Warden of the Wilds', faction: 'Elf' },
-    { ladderId: 9, name: 'Sentinel of the Stars', faction: 'Elf' },
-    { ladderId: 10, name: 'Ranger Captain', faction: 'Elf' },
-    { ladderId: 11, name: 'Moon Priestess', faction: 'Elf' },
-    { ladderId: 12, name: 'Sun Dame', faction: 'Elf' },
-    { ladderId: 13, name: 'Spellweaver', faction: 'Elf' },
-    { ladderId: 14, name: 'Bladesinger', faction: 'Elf' },
-    { ladderId: 15, name: 'Shadow Walker', faction: 'Elf' },
-    { ladderId: 16, name: 'Loremaster', faction: 'Elf' },
-    { ladderId: 17, name: 'Elder', faction: 'Elf' },
-    { ladderId: 18, name: 'Ranger', faction: 'Elf' },
-    { ladderId: 19, name: 'Scout', faction: 'Elf' },
-    { ladderId: 20, name: 'Initiate', faction: 'Elf' },
+    { ladderId: 21, name: 'High Queen', faction: 'Elf' },
+    { ladderId: 22, name: 'Archdruid', faction: 'Elf' },
+    { ladderId: 23, name: 'Eldest', faction: 'Elf' },
+    { ladderId: 24, name: 'Lady of the Forest', faction: 'Elf' },
+    { ladderId: 25, name: 'Mistress of Lore', faction: 'Elf' },
+    { ladderId: 26, name: 'Guardian of the Glades', faction: 'Elf' },
+    { ladderId: 27, name: 'Keeper of the Grove', faction: 'Elf' },
+    { ladderId: 28, name: 'Warden of the Wilds', faction: 'Elf' },
+    { ladderId: 29, name: 'Sentinel of the Stars', faction: 'Elf' },
+    { ladderId: 210, name: 'Ranger Captain', faction: 'Elf' },
+    { ladderId: 211, name: 'Moon Priestess', faction: 'Elf' },
+    { ladderId: 212, name: 'Sun Dame', faction: 'Elf' },
+    { ladderId: 213, name: 'Spellweaver', faction: 'Elf' },
+    { ladderId: 214, name: 'Bladesinger', faction: 'Elf' },
+    { ladderId: 215, name: 'Shadow Walker', faction: 'Elf' },
+    { ladderId: 216, name: 'Loremaster', faction: 'Elf' },
+    { ladderId: 217, name: 'Elder', faction: 'Elf' },
+    { ladderId: 218, name: 'Ranger', faction: 'Elf' },
+    { ladderId: 219, name: 'Scout', faction: 'Elf' },
+    { ladderId: 220, name: 'Initiate', faction: 'Elf' },
 
     // Faction: Demon
-    { ladderId: 1, name: 'Demon Lord', faction: 'Demon' },
-    { ladderId: 2, name: 'Archdemon', faction: 'Demon' },
-    { ladderId: 3, name: 'Overlord', faction: 'Demon' },
-    { ladderId: 4, name: 'Pit Fiend', faction: 'Demon' },
-    { ladderId: 5, name: 'Balor', faction: 'Demon' },
-    { ladderId: 6, name: 'Succubus', faction: 'Demon' },
-    { ladderId: 7, name: 'Marilith', faction: 'Demon' },
-    { ladderId: 8, name: 'Vrock', faction: 'Demon' },
-    { ladderId: 9, name: 'Hezrou', faction: 'Demon' },
-    { ladderId: 10, name: 'Glabrezu', faction: 'Demon' },
-    { ladderId: 11, name: 'Nalfeshnee', faction: 'Demon' },
-    { ladderId: 12, name: 'Barlgura', faction: 'Demon' },
-    { ladderId: 13, name: 'Chasme', faction: 'Demon' },
-    { ladderId: 14, name: 'Dretch', faction: 'Demon' },
-    { ladderId: 15, name: 'Manes', faction: 'Demon' },
-    { ladderId: 16, name: 'Rutterkin', faction: 'Demon' },
-    { ladderId: 17, name: 'Lemure', faction: 'Demon' },
-    { ladderId: 18, name: 'Nupperibo', faction: 'Demon' },
-    { ladderId: 19, name: 'Spinagon', faction: 'Demon' },
-    { ladderId: 20, name: 'Imp', faction: 'Demon' },
+    { ladderId: 31, name: 'Demon Lord', faction: 'Demon' },
+    { ladderId: 32, name: 'Archdemon', faction: 'Demon' },
+    { ladderId: 33, name: 'Overlord', faction: 'Demon' },
+    { ladderId: 34, name: 'Pit Fiend', faction: 'Demon' },
+    { ladderId: 35, name: 'Balor', faction: 'Demon' },
+    { ladderId: 36, name: 'Succubus', faction: 'Demon' },
+    { ladderId: 37, name: 'Marilith', faction: 'Demon' },
+    { ladderId: 38, name: 'Vrock', faction: 'Demon' },
+    { ladderId: 39, name: 'Hezrou', faction: 'Demon' },
+    { ladderId: 310, name: 'Glabrezu', faction: 'Demon' },
+    { ladderId: 311, name: 'Nalfeshnee', faction: 'Demon' },
+    { ladderId: 312, name: 'Barlgura', faction: 'Demon' },
+    { ladderId: 313, name: 'Chasme', faction: 'Demon' },
+    { ladderId: 314, name: 'Dretch', faction: 'Demon' },
+    { ladderId: 315, name: 'Manes', faction: 'Demon' },
+    { ladderId: 316, name: 'Rutterkin', faction: 'Demon' },
+    { ladderId: 317, name: 'Lemure', faction: 'Demon' },
+    { ladderId: 318, name: 'Nupperibo', faction: 'Demon' },
+    { ladderId: 319, name: 'Spinagon', faction: 'Demon' },
+    { ladderId: 320, name: 'Imp', faction: 'Demon' },
 
     // Faction: Angel
-    { ladderId: 1, name: 'Archseraphim', faction: 'Angel' },
-    { ladderId: 2, name: 'Cherubim', faction: 'Angel' },
-    { ladderId: 3, name: 'Throne', faction: 'Angel' },
-    { ladderId: 4, name: 'Dominion', faction: 'Angel' },
-    { ladderId: 5, name: 'Virtue', faction: 'Angel' },
-    { ladderId: 6, name: 'Power', faction: 'Angel' },
-    { ladderId: 7, name: 'Principalitie', faction: 'Angel' },
-    { ladderId: 8, name: 'Archangel', faction: 'Angel' },
-    { ladderId: 9, name: 'Angel', faction: 'Angel' },
-    { ladderId: 10, name: 'Malakim', faction: 'Angel' },
-    { ladderId: 11, name: 'Elohim', faction: 'Angel' },
-    { ladderId: 12, name: 'Bene Elohim', faction: 'Angel' },
-    { ladderId: 13, name: 'Ophanim', faction: 'Angel' },
-    { ladderId: 14, name: 'Grigori', faction: 'Angel' },
-    { ladderId: 15, name: 'Guardian Angel', faction: 'Angel' },
-    { ladderId: 16, name: 'Messenger Angel', faction: 'Angel' },
-    { ladderId: 17, name: 'Warrior Angel', faction: 'Angel' },
-    { ladderId: 18, name: 'Healing Angel', faction: 'Angel' },
-    { ladderId: 19, name: 'Astral Deva', faction: 'Angel' },
-    { ladderId: 20, name: 'Celestial Guide', faction: 'Angel' },
+    { ladderId: 41, name: 'Archseraphim', faction: 'Angel' },
+    { ladderId: 42, name: 'Cherubim', faction: 'Angel' },
+    { ladderId: 43, name: 'Throne', faction: 'Angel' },
+    { ladderId: 44, name: 'Dominion', faction: 'Angel' },
+    { ladderId: 45, name: 'Virtue', faction: 'Angel' },
+    { ladderId: 46, name: 'Power', faction: 'Angel' },
+    { ladderId: 47, name: 'Principalitie', faction: 'Angel' },
+    { ladderId: 48, name: 'Archangel', faction: 'Angel' },
+    { ladderId: 49, name: 'Angel', faction: 'Angel' },
+    { ladderId: 410, name: 'Malakim', faction: 'Angel' },
+    { ladderId: 411, name: 'Elohim', faction: 'Angel' },
+    { ladderId: 412, name: 'Bene Elohim', faction: 'Angel' },
+    { ladderId: 413, name: 'Ophanim', faction: 'Angel' },
+    { ladderId: 414, name: 'Grigori', faction: 'Angel' },
+    { ladderId: 415, name: 'Guardian Angel', faction: 'Angel' },
+    { ladderId: 416, name: 'Messenger Angel', faction: 'Angel' },
+    { ladderId: 417, name: 'Warrior Angel', faction: 'Angel' },
+    { ladderId: 418, name: 'Healing Angel', faction: 'Angel' },
+    { ladderId: 419, name: 'Astral Deva', faction: 'Angel' },
+    { ladderId: 420, name: 'Celestial Guide', faction: 'Angel' },
 
     // Faction: Undead
-    { ladderId: 1, name: 'Lich King', faction: 'Undead' },
-    { ladderId: 2, name: 'Dread Necromancer', faction: 'Undead' },
-    { ladderId: 3, name: 'Death Knight', faction: 'Undead' },
-    { ladderId: 4, name: 'Banshee Queen', faction: 'Undead' },
-    { ladderId: 5, name: 'Wight Lord', faction: 'Undead' },
-    { ladderId: 6, name: 'Soul Reaper', faction: 'Undead' },
-    { ladderId: 7, name: 'Revenant', faction: 'Undead' },
-    { ladderId: 8, name: 'Wraith', faction: 'Undead' },
-    { ladderId: 9, name: 'Abomination', faction: 'Undead' },
-    { ladderId: 10, name: 'Skeleton Lord', faction: 'Undead' },
-    { ladderId: 11, name: 'Bone Golem', faction: 'Undead' },
-    { ladderId: 12, name: 'Shade', faction: 'Undead' },
-    { ladderId: 13, name: 'Spirit', faction: 'Undead' },
-    { ladderId: 14, name: 'Skeleton Warrior', faction: 'Undead' },
-    { ladderId: 15, name: 'Skeleton Archer', faction: 'Undead' },
-    { ladderId: 16, name: 'Zombie Brute', faction: 'Undead' },
-    { ladderId: 17, name: 'Ghast', faction: 'Undead' },
-    { ladderId: 18, name: 'Zombie', faction: 'Undead' },
-    { ladderId: 19, name: 'Rotting Corpse', faction: 'Undead' },
-    { ladderId: 20, name: 'Lost Soul', faction: 'Undead' }
+    { ladderId: 51, name: 'Lich King', faction: 'Undead' },
+    { ladderId: 52, name: 'Dread Necromancer', faction: 'Undead' },
+    { ladderId: 53, name: 'Death Knight', faction: 'Undead' },
+    { ladderId: 54, name: 'Banshee Queen', faction: 'Undead' },
+    { ladderId: 55, name: 'Wight Lord', faction: 'Undead' },
+    { ladderId: 56, name: 'Soul Reaper', faction: 'Undead' },
+    { ladderId: 57, name: 'Revenant', faction: 'Undead' },
+    { ladderId: 58, name: 'Wraith', faction: 'Undead' },
+    { ladderId: 59, name: 'Abomination', faction: 'Undead' },
+    { ladderId: 510, name: 'Skeleton Lord', faction: 'Undead' },
+    { ladderId: 511, name: 'Bone Golem', faction: 'Undead' },
+    { ladderId: 512, name: 'Shade', faction: 'Undead' },
+    { ladderId: 513, name: 'Spirit', faction: 'Undead' },
+    { ladderId: 514, name: 'Skeleton Warrior', faction: 'Undead' },
+    { ladderId: 515, name: 'Skeleton Archer', faction: 'Undead' },
+    { ladderId: 516, name: 'Zombie Brute', faction: 'Undead' },
+    { ladderId: 517, name: 'Ghast', faction: 'Undead' },
+    { ladderId: 518, name: 'Zombie', faction: 'Undead' },
+    { ladderId: 519, name: 'Rotting Corpse', faction: 'Undead' },
+    { ladderId: 520, name: 'Lost Soul', faction: 'Undead' }
 
 ];
 
 const heroData = [
     // Faction: Orc
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'Orc' },
+    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'Orc' },
     { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'Orc' },
     { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'Orc' },
     { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'Orc' },
@@ -214,7 +215,7 @@ const heroData = [
     { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'Orc' },
     { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'Orc' },
     // Faction: Human
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'Human' },
+    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'Human' },
     { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'Human' },
     { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'Human' },
     { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'Human' },
@@ -543,7 +544,7 @@ const soldierData = [
     { name: 'Black Orc Warrior', description: 'Elite melee units.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'Orc' },
     { name: 'Orc Raider', description: 'Fast and strong.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'Orc' },
     { name: 'Warlock Shamans', description: 'Powerful spellcasters with support abilities.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'Orc' },
-    { name: 'Necromancer', description: 'Raise and control the dead.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'Orc' },
+    { name: 'Orc Necromancer', description: 'Raise and control the dead.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'Orc' },
     { name: 'Dragon Rider', description: 'Very powerful flying unit.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'Orc' },
     { name: 'Hell Lord', description: 'The strongest unit, demon-like creatures.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'Orc' },
 // Human Faction
@@ -689,13 +690,13 @@ const spellData = [
     { name: 'Feral Speed', description: 'Increases the movement speed of Orc units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Blood Scent', description: 'Reveals the location of hidden enemies within a certain radius', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Shamanistic Ward', description: 'Protects friendly units from harmful spells and effects', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'Orc' },
-    { name: 'Call of the Wild', description: 'Summons wild beasts to fight alongside the Orcs', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'Orc' },
+    { name: 'Call of the Steppes', description: 'Summons wild beasts to fight alongside the Orcs', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Vision Quest', description: 'Grants the caster temporary vision of the entire battlefield', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Enfeeblement', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Vulnerability', description: 'Increases the damage taken by enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Confusion', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Rotting Touch', description: 'Inflicts a disease on enemy units, causing them to slowly decay and weaken', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'Orc' },
-    { name: 'Curse of Weakness', description: 'Curses enemy units, reducing their strength and agility', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'Orc' },
+    { name: 'Bane of Weakblood', description: 'Curses enemy units, reducing their strength and agility', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'War God\'s Might', description: 'Summons a powerful avatar of Gork (or Mork) to wreak havoc on the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'The Great Warcry', description: 'A massive, channeled spell that significantly increases the power and size of the entire Orc army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'Orc' },
     { name: 'Rupturing Earth', description: 'Creates fissures in the earth that erupt with molten rock, dealing damage and creating obstacles', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'Orc' },
@@ -713,7 +714,7 @@ const spellData = [
     { name: 'Healing Touch', description: 'Restores health to a single target', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Mass Heal', description: 'Heals multiple allies in an area', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Divine Shield', description: 'Grants a temporary shield to an ally, absorbing damage', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'Human' },
-    { name: 'Sanctuary', description: 'Creates a safe zone where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'Human' },
+    { name: 'Aegis', description: 'Creates a safe zone where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Haste', description: 'Increases the movement speed of friendly units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Eagle Eye', description: 'Grants vision of a large area of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Teleportation', description: 'Allows the caster to teleport a short distance', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'Human' },
@@ -721,7 +722,7 @@ const spellData = [
     { name: 'Dispel Magic', description: 'Removes harmful magical effects from allies', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Curse of Weakness', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Slow', description: 'Reduces the movement and attack speed of enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'Human' },
-    { name: 'Confusion', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'Human' },
+    { name: 'Mindmaze', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Disarm', description: 'Temporarily disarms enemy units, preventing them from attacking', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Hex', description: 'Curses an enemy unit, inflicting random negative effects', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'Human' },
     { name: 'Meteor Storm', description: 'Calls down a barrage of meteors that deal massive damage to a large area', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'Human' },
@@ -788,7 +789,7 @@ const spellData = [
     { name: 'Inferno', description: 'Unleashes a massive inferno that engulfs the battlefield in flames', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'Demon' },
     { name: 'Cataclysm', description: 'Creates a devastating earthquake that shatters the ground and damages all units in the area', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'Demon' },
     { name: 'Unholy Resurrection', description: 'Raises fallen demons from the dead, strengthening the demon army', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'Demon' },
-    { name: 'Soulstorm', description: 'A powerful vortex of souls that damages and weakens enemies while empowering allies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'Demon' },
+    { name: 'Hellstorm', description: 'A powerful vortex of souls that damages and weakens enemies while empowering allies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'Demon' },
     { name: 'Blood Ritual', description: 'Sacrifices a portion of the demon army to gain a temporary boost in power and summon a powerful demon', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'Demon' },
     { name: 'Summoning Circle', description: 'Creates a summoning circle that allows the caster to summon powerful demons from the depths of hell', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'Demon' },
 
@@ -800,7 +801,7 @@ const spellData = [
     { name: 'Seraph\'s Wrath', description: 'Summons a seraph to unleash a devastating attack on a target area', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'Angel' },
     { name: 'Divine Protection', description: 'Creates a protective barrier of holy light around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'Angel' },
     { name: 'Holy Aura', description: 'Grants increased armor and resistance to holy damage to nearby allies', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'Angel' },
-    { name: 'Healing Touch', description: 'A powerful healing spell that restores health to a single target', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'Angel' },
+    { name: 'Healing', description: 'A powerful healing spell that restores health to a single target', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'Angel' },
     { name: 'Resurrection', description: 'Brings a fallen ally back to life with a portion of their health restored', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'Angel' },
     { name: 'Sanctuary', description: 'Creates a safe haven where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'Angel' },
     { name: 'Angelic Wings', description: 'Grants temporary flight to friendly units', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'Angel' },
@@ -838,7 +839,7 @@ const spellData = [
     { name: 'Summon Wraith', description: 'Summons a wraith to fight alongside the undead army', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Necromantic Barrier', description: 'Creates a wall of bones that blocks enemy movement', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Withering Touch', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'Undead' },
-    { name: 'Fear', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'Undead' },
+    { name: 'Horror', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Curse of Frailty', description: 'Curses enemy units, making them more vulnerable to damage', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Life Drain', description: 'Drains the life essence of an enemy unit, healing the caster', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Death\'s Mark', description: 'Marks an enemy unit for death, causing them to take increased damage', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'Undead' },
@@ -847,7 +848,7 @@ const spellData = [
     { name: 'Lich\'s Phylactery', description: 'Summons a powerful lich to fight alongside the undead army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Unholy Frenzy', description: 'Enrages undead units, increasing their attack speed and damage but reducing their defense', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Soulstorm', description: 'Unleashes a storm of souls that damages and weakens enemies while healing undead units', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'Undead' },
-    { name: 'Ritual of Rebirth', description: 'Resurrects a powerful undead hero from the grave', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'Undead' },
+    { name: 'Rite of Unlife', description: 'Resurrects a powerful undead hero from the grave', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'Undead' },
     { name: 'Summon Bone Dragon', description: 'Summons a skeletal dragon to fight alongside the undead army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'Undead' }
 ];
 
@@ -859,7 +860,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Orc'
+        faction: 'Orc',
+        id: 26
     },
     {
         name: 'The Blood Chalice of Mauller',
@@ -867,7 +869,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Orc'
+        faction: 'Orc',
+        id: 27
     },
     {
         name: 'The Banner of the Wars',
@@ -875,7 +878,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Orc'
+        faction: 'Orc',
+        id: 28
     },
     {
         name: 'The Mask of the Beastlord',
@@ -883,7 +887,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Orc'
+        faction: 'Orc',
+        id: 29
     },
     {
         name: 'The Heart of the Volcano',
@@ -891,7 +896,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Orc'
+        faction: 'Orc',
+        id: 30
     },
 
     // Human Artifacts
@@ -901,7 +907,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Human'
+        faction: 'Human',
+        id:1
     },
     {
         name: 'The Blade of the Crusader',
@@ -909,7 +916,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Human'
+        faction: 'Human',
+        id:2
     },
     {
         name: 'The Shield of the Defender',
@@ -917,7 +925,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Human'
+        faction: 'Human',
+        id:3
     },
     {
         name: 'The Tome of Arcane Knowledge',
@@ -925,7 +934,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Human'
+        faction: 'Human',
+        id:4
     },
     {
         name: 'The Amulet of the Dragonheart',
@@ -933,7 +943,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Human'
+        faction: 'Human',
+        id:5
     },
 
     // Elf Artifacts
@@ -943,7 +954,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Elf'
+        faction: 'Elf',
+        id:6
     },
     {
         name: 'The Moonstone of Elore',
@@ -951,7 +963,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Elf'
+        faction: 'Elf',
+        id:7
     },
     {
         name: 'The Horn of the Wild Hunt',
@@ -959,7 +972,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Elf'
+        faction: 'Elf',
+        id:8
     },
     {
         name: 'The Elven Crown of Thorns',
@@ -967,7 +981,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Elf'
+        faction: 'Elf',
+        id:9
     },
     {
         name: 'The Heart of the Forest',
@@ -975,7 +990,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Elf'
+        faction: 'Elf',
+        id:10
     },
 // Demon Artifacts
     {
@@ -984,7 +1000,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Demon'
+        faction: 'Demon',
+        id:11
     },
     {
         name: 'The Bloodstone of Zargan',
@@ -992,7 +1009,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Demon'
+        faction: 'Demon',
+        id:12
     },
     {
         name: 'The Banner of the Abyss',
@@ -1000,7 +1018,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Demon'
+        faction: 'Demon',
+        id: 13
     },
     {
         name: 'The Helm of the Archbalrog',
@@ -1008,7 +1027,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Demon'
+        faction: 'Demon',
+        id: 14
     },
     {
         name: 'The Grimoire of the Devil',
@@ -1016,7 +1036,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Demon'
+        faction: 'Demon',
+        id: 15
     },
 
     // Angel Artifacts
@@ -1026,7 +1047,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Angel'
+        faction: 'Angel',
+        id: 16
     },
     {
         name: 'The Spear of Leonginus',
@@ -1034,7 +1056,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Angel'
+        faction: 'Angel',
+        id: 17
     },
     {
         name: 'The Wings of Gabriel',
@@ -1042,7 +1065,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Angel'
+        faction: 'Angel',
+        id: 18
     },
     {
         name: 'The Halo of Seraphim',
@@ -1050,7 +1074,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Angel'
+        faction: 'Angel',
+        id: 19
     },
     {
         name: 'The Sword of Michael',
@@ -1058,7 +1083,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Angel'
+        faction: 'Angel',
+        id: 20
     },
 
     // Undead Artifacts
@@ -1068,7 +1094,8 @@ const artifactData = [
         cost: 19175106,
         gains: 3835021,
         costGainingMultiplier: 2,
-        faction: 'Undead'
+        faction: 'Undead',
+        id: 21
     },
     {
         name: 'The Crown of the Night King',
@@ -1076,7 +1103,8 @@ const artifactData = [
         cost: 402677224,
         gains: 80535445,
         costGainingMultiplier: 2,
-        faction: 'Undead'
+        faction: 'Undead',
+        id: 22
     },
     {
         name: 'The Book of the Damned',
@@ -1084,7 +1112,8 @@ const artifactData = [
         cost: 8456221712,
         gains: 1691244342,
         costGainingMultiplier: 2,
-        faction: 'Undead'
+        faction: 'Undead',
+        id: 23
     },
     {
         name: 'The Shroud of the Banshee Queen',
@@ -1092,7 +1121,8 @@ const artifactData = [
         cost: 177580655956,
         gains: 35516131191,
         costGainingMultiplier: 2,
-        faction: 'Undead'
+        faction: 'Undead',
+        id: 24
     },
     {
         name: 'The Soul Cage of the Necropolis',
@@ -1100,7 +1130,8 @@ const artifactData = [
         cost: 3729193775067,
         gains: 745838755013,
         costGainingMultiplier: 2,
-        faction: 'Undead'
+        faction: 'Undead',
+        id: 25
     }
 ];
 
@@ -1237,19 +1268,16 @@ const skillBuffData = [
 const seedDatabase = async () => {
     try {
         await Ladder.deleteMany({});
-        await Equipment.deleteMany({});
         await Soldier.deleteMany({});
         await Spell.deleteMany({});
         await Artifact.deleteMany({});
         await Friend.deleteMany({});
-        await SkillBuff.deleteMany({}); // Clear existing Skill & Buff data
+        await Hero.deleteMany({});
+
 
 
         await Ladder.insertMany(ladderData);
         console.log('Ladders seeded successfully!');
-
-        await Equipment.insertMany(equipmentData);
-        console.log('Equipment seeded successfully!');
 
         await Soldier.insertMany(soldierData);
         console.log('Soldiers seeded successfully!');
@@ -1266,11 +1294,14 @@ const seedDatabase = async () => {
         await SkillBuff.insertMany(skillBuffData); // Insert new Skill & Buff data
         console.log('Skill & Buffs seeded successfully!');
 
-        mongoose.connection.close();
+        await Hero.insertMany(heroData); // Insert new Skill & Buff data
+
+
+        await mongoose.connection.close();
         console.log('Database seeding completed and connection closed.');
     } catch (err) {
         console.error('Error seeding data:', err);
-        mongoose.connection.close();
+        await mongoose.connection.close();
     }
 };
 

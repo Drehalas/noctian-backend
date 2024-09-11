@@ -1,15 +1,9 @@
 const mongoose = require('mongoose');
 
-// Friend Schema
 const friendSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-        unique: true
-    }
+    faction: { type: String, required: true },
+    addFriendName: { type: String, required: true }
 });
+friendSchema.index({ name: 1 }, { unique: false });
 
-// Friend Model
-const Friend = mongoose.model('Friend', friendSchema);
-
-module.exports = Friend;
+module.exports = mongoose.model('Friend', friendSchema);
