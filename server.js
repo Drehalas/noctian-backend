@@ -10,6 +10,7 @@ const ladderRoutes = require('./routes/ladderRoutes');
 const skillBuffRoutes = require('./routes/skillBuffRoutes');
 const artifactRoutes = require('./routes/artifactRoutes');
 const heroRoutes = require('./routes/heroRoutes');
+const armoryRoutes = require('./routes/armoryRoutes'); // Import armory routes
 
 // Initialize the Express application
 const app = express();
@@ -30,12 +31,12 @@ app.use('/api/ladderRoutes', ladderRoutes);
 app.use('/api/skillbuffs', skillBuffRoutes);
 app.use('/api/hero', heroRoutes);
 
+// Add armory routes
+app.use('/api/armories', armoryRoutes); // Use armory routes
+
 app.get('/', (req, res) => {
     res.send('Hello, Noctian Universe!');
 });
-
-// Use the user routes
-app.use('/api/users', userRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5001;
