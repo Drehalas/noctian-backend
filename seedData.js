@@ -1318,9 +1318,1136 @@ const warData = [
     }
 ];
 
-const armoryData = [];
+const armoryData = [
+    {
+        "name": "Warcamp",
+        "description": "For basic infantry units and increases training quality.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 1
+    },
+    {
+        "name": "Ancient Grove",
+        "description": "For basic units and increases training quality for archers and druids.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 2
+    },
+    {
+        "name": "Infernal Pit",
+        "description": "For basic demon units and increases their training quality.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 3
+    },
+    {
+        "name": "Celestial Temple",
+        "description": "For basic angel units and increases their training quality.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 4
+    },
+    {
+        "name": "Crypt",
+        "description": "For basic undead units like skeletons and zombies, increases their training quality.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 5
+    },
+    {
+        "name": "Town Center",
+        "description": "For basic human units and increases their training quality.",
+        "cost": 5767,
+        "gains": 450,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 1,
+        "factionId": 6
+    },
+    {
+        "name": "Forge",
+        "description": "For weapon and armor upgrades, improves blacksmithing efficiency.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 1
+    },
+    {
+        "name": "Moonwell",
+        "description": "For upgrades for spellcasters and enhances mana regeneration.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 2
+    },
+    {
+        "name": "Sacrificial Altar",
+        "description": "For upgrades for spellcasters and enhances demonic energy.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 3
+    },
+    {
+        "name": "Holy Fountain",
+        "description": "For upgrades for healers and support units, enhances divine energy.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 4
+    },
+    {
+        "name": "Boneyard",
+        "description": "For upgrades for melee undead units, improves their strength and resilience.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 5
+    },
+    {
+        "name": "Barracks",
+        "description": "For melee infantry units and upgrades, improves their combat skills.",
+        "cost": 7497,
+        "gains": 585,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 2,
+        "factionId": 6
+    },
+    {
+        "name": "Spirit Lodge",
+        "description": "For shaman units and upgrades, enhances spiritual power.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 1
+    },
+    {
+        "name": "Hunter's Lodge",
+        "description": "For ranged units and upgrades, improves accuracy and damage.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 2
+    },
+    {
+        "name": "Torture Chamber",
+        "description": "For demon units specialized in inflicting pain and suffering.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 3
+    },
+    {
+        "name": "Judgement Hall",
+        "description": "For warrior angel units and upgrades, improves combat prowess.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 4
+    },
+    {
+        "name": "Spirit Tower",
+        "description": "For spectral units and upgrades, enhances their ethereal abilities.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 5
+    },
+    {
+        "name": "Archery Range",
+        "description": "For ranged units and upgrades, improves their accuracy and damage.",
+        "cost": 9746,
+        "gains": 761,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 3,
+        "factionId": 6
+    },
+    {
+        "name": "Bestiary",
+        "description": "For beast units and upgrades, improves taming and training.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 1
+    },
+    {
+        "name": "Wild Sanctuary",
+        "description": "For animal companions and upgrades, strengthens their bond with elves.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 2
+    },
+    {
+        "name": "Blight Nest",
+        "description": "For flying demon units and upgrades, improves their flight and agility.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 3
+    },
+    {
+        "name": "Aviary of Light",
+        "description": "For flying angel units and upgrades, enhances flight and agility.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 4
+    },
+    {
+        "name": "Necropolis",
+        "description": "For necromancer units and upgrades, increases their necromantic power.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 5
+    },
+    {
+        "name": "Stable",
+        "description": "For cavalry units and upgrades, improves their speed and charge.",
+        "cost": 12670,
+        "gains": 989,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 4,
+        "factionId": 6
+    },
+    {
+        "name": "Great Hall",
+        "description": "For advanced units and upgrades, increases overall faction strength.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 1
+    },
+    {
+        "name": "Elven Citadel",
+        "description": "For advanced units and upgrades, increases overall faction strength.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 2
+    },
+    {
+        "name": "Demon Citadel",
+        "description": "For advanced demon units and upgrades, increases overall faction strength.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 3
+    },
+    {
+        "name": "Heavenly Citadel",
+        "description": "For advanced angel units and upgrades, increases overall faction strength.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 4
+    },
+    {
+        "name": "Unholy Cathedral",
+        "description": "For advanced undead units and upgrades, increases overall faction strength.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 5
+    },
+    {
+        "name": "Mage Tower",
+        "description": "For spellcaster units and upgrades, enhances their magical power.",
+        "cost": 16471,
+        "gains": 1285,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 5,
+        "factionId": 6
+    },
+    {
+        "name": "Serrated Blades",
+        "description": "Increases the damage of axes and swords.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 1
+    },
+    {
+        "name": "Elven Steel",
+        "description": "Increases the damage and durability of swords and bows.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 2
+    },
+    {
+        "name": "Demonic Steel",
+        "description": "Increases the damage and durability of swords, axes, and claws.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 3
+    },
+    {
+        "name": "Celestial Forging",
+        "description": "Increases the damage and durability of swords, spears, and bows.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 4
+    },
+    {
+        "name": "Cursed Blades",
+        "description": "Increases the damage and durability of swords, axes, and scythes.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 5
+    },
+    {
+        "name": "Enchanted Steel",
+        "description": "Increases the damage and durability of swords, spears, and axes, imbuing them with a faint magical glow.",
+        "cost": 21412,
+        "gains": 1671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 6,
+        "factionId": 6
+    },
+    {
+        "name": "Poisoned Tips",
+        "description": "Adds poison damage to arrows and spears.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 1
+    },
+    {
+        "name": "Moonstone Arrows",
+        "description": "Enchants arrows with moonlight, causing additional damage and slowing enemies.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 2
+    },
+    {
+        "name": "Soul-Stealing Blades",
+        "description": "Imbues weapons with the ability to drain life essence from enemies.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 3
+    },
+    {
+        "name": "Holy Light Infusion",
+        "description": "Imbues weapons with holy light, causing radiant damage and purifying evil.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 4
+    },
+    {
+        "name": "Soul-Siphoning Weapons",
+        "description": "Imbues weapons with the ability to drain life essence from enemies.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 5
+    },
+    {
+        "name": "Hawkeye's Sight",
+        "description": "Enhances the range and accuracy of longbows, allowing archers to see further and strike with pinpoint precision.",
+        "cost": 27836,
+        "gains": 2172,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 7,
+        "factionId": 6
+    },
+    {
+        "name": "Flaming Munitions",
+        "description": "Sets arrows and siege weapons ablaze, causing fire damage.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 1
+    },
+    {
+        "name": "Enchanted Blades",
+        "description": "Imbues swords with magical energy, granting bonus effects like lifesteal or armor penetration.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 2
+    },
+    {
+        "name": "Hellfire Infusion",
+        "description": "Enchants weapons with hellfire, causing burning damage over time.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 3
+    },
+    {
+        "name": "Angelic Feathers",
+        "description": "Enchants arrows with feathers, granting them increased range and accuracy.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 4
+    },
+    {
+        "name": "Blight-Infused Arrows",
+        "description": "Enchants arrows with blight, causing decay and disease.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 5
+    },
+    {
+        "name": "Piercing Bolts",
+        "description": "Imbues crossbow bolts with magical energy, allowing them to pierce through armor with greater ease.",
+        "cost": 36187,
+        "gains": 2824,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 8,
+        "factionId": 6
+    },
+    {
+        "name": "Rune-Inscribed Weapons",
+        "description": "Enchants weapons with runes, granting additional effects.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 1
+    },
+    {
+        "name": "Nature's Wrath",
+        "description": "Enhances the power of nature-based weapons, increasing their damage and range.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 2
+    },
+    {
+        "name": "Corrupted Runes",
+        "description": "Inscribes weapons with dark runes, granting additional demonic powers.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 3
+    },
+    {
+        "name": "Blessings of the Divine",
+        "description": "Enhances the power of holy weapons, granting additional effects like healing or stuns.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 4
+    },
+    {
+        "name": "Spectral Touch",
+        "description": "Enchants weapons with spectral energy, allowing them to bypass armor.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 5
+    },
+    {
+        "name": "Elemental Arrows",
+        "description": "Enchants arrows with elemental power, adding fire, ice, or lightning damage to attacks.",
+        "cost": 47043,
+        "gains": 3671,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 9,
+        "factionId": 6
+    },
+    {
+        "name": "Berserker Axes",
+        "description": "Massive axes that deal devastating blows but slow down the wielder.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 1
+    },
+    {
+        "name": "Starfire Arrows",
+        "description": "Creates arrows that explode on impact, dealing area-of-effect fire damage.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 2
+    },
+    {
+        "name": "Demonic Claws",
+        "description": "Sharpens and strengthens claws, increasing their damage and tearing ability.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 3
+    },
+    {
+        "name": "Seraphim Blades",
+        "description": "Legendary swords wielded by Seraphim, radiating holy light and dealing devastating damage.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 4
+    },
+    {
+        "name": "Bone Reaver",
+        "description": "A massive scythe that deals devastating blows and heals the wielder.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 5
+    },
+    {
+        "name": "Holy Avenger",
+        "description": "Transforms a knight's lance into a holy weapon, dealing bonus damage against undead and demonic foes.",
+        "cost": 61156,
+        "gains": 4772,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 10,
+        "factionId": 6
+    },
+    {
+        "name": "Spiked Armor",
+        "description": "Adds spikes to armor, inflicting damage on attackers.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 1
+    },
+    {
+        "name": "Leafweave Armor",
+        "description": "Light armor made of woven leaves, increases movement speed and agility.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 2
+    },
+    {
+        "name": "Spiked Hide",
+        "description": "Adds spikes to demonic hides, inflicting damage on attackers.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 3
+    },
+    {
+        "name": "Divine Raiment",
+        "description": "Light armor made of ethereal cloth, increases movement speed and agility.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 4
+    },
+    {
+        "name": "Bone Plating",
+        "description": "Reinforces skeletal structures, increasing armor and reducing damage taken.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 5
+    },
+    {
+        "name": "Padded Gambeson",
+        "description": "Increases the armor of basic infantry units.",
+        "cost": 79503,
+        "gains": 6204,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 11,
+        "factionId": 6
+    },
+    {
+        "name": "Trollhide Armor",
+        "description": "Tough leather armor that increases health regeneration.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 1
+    },
+    {
+        "name": "Moonsilver Armor",
+        "description": "Imbued with moonlight, this armor grants magic resistance and regeneration.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 2
+    },
+    {
+        "name": "Demonic Plate",
+        "description": "Heavy armor made of infernal metals, provides excellent protection and resilience.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 3
+    },
+    {
+        "name": "Celestial Plate",
+        "description": "Heavy armor made of celestial metals, provides exceptional protection and resilience.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 4
+    },
+    {
+        "name": "Ethereal Shroud",
+        "description": "Enhances spectral units, making them more resistant to physical attacks.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 5
+    },
+    {
+        "name": "Chainmail Reinforcement",
+        "description": "Strengthens chainmail armor, providing better protection.",
+        "cost": 103354,
+        "gains": 8065,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 12,
+        "factionId": 6
+    },
+    {
+        "name": "Black Iron Plate",
+        "description": "Heavy plate armor that provides excellent protection.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 1
+    },
+    {
+        "name": "Dragon Scale Armor",
+        "description": "Rare and powerful armor made from dragon scales, provides exceptional protection.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 2
+    },
+    {
+        "name": "Shadow Mantle",
+        "description": "Grants increased movement speed and stealth in darkness.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 3
+    },
+    {
+        "name": "Wings of Light",
+        "description": "Enhances the wings of flying units, increasing their speed and maneuverability.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 4
+    },
+    {
+        "name": "Dark Ritual Armor",
+        "description": "Imbued with dark magic, this armor grants bonuses to health and regeneration.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 5
+    },
+    {
+        "name": "Plate Armor Plating",
+        "description": "Adds additional layers to plate armor, increasing its durability.",
+        "cost": 134360,
+        "gains": 10484,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 13,
+        "factionId": 6
+    },
+    {
+        "name": "Warlord's Regalia",
+        "description": "Unique armor set for the Warlord, granting bonuses to all stats.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 1
+    },
+    {
+        "name": "Sentinel's Raiment",
+        "description": "Unique armor set for the Sentinel, granting bonuses to all stats.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 2
+    },
+    {
+        "name": "Overlord's Regalia",
+        "description": "Unique armor set for the Overlord, granting bonuses to all stats and demonic powers.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 3
+    },
+    {
+        "name": "Archangel's Armor",
+        "description": "Unique armor set for the Archangel, granting bonuses to all stats and holy powers.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 4
+    },
+    {
+        "name": "Lich's Robes",
+        "description": "Unique armor set for the Lich, granting bonuses to all stats and necromantic power.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 5
+    },
+    {
+        "name": "Paladin's Blessing",
+        "description": "Enchants armor with holy energy, granting increased defense and regeneration.",
+        "cost": 174668,
+        "gains": 13629,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 14,
+        "factionId": 6
+    },
+    {
+        "name": "Shaman's Garb",
+        "description": "Enhances the shaman's magic and spiritual power.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 1
+    },
+    {
+        "name": "Druid's Vestments",
+        "description": "Enhances the druid's connection to nature, increasing their healing and support abilities.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 2
+    },
+    {
+        "name": "Warlock's Robes",
+        "description": "Enhances the warlock's spellcasting and demonic energy manipulation.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 3
+    },
+    {
+        "name": "Healer's Robes",
+        "description": "Enhances the healing and support abilities of priests and clerics.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 4
+    },
+    {
+        "name": "Vampire's Cloak",
+        "description": "Enhances the vampire's abilities, increasing their lifesteal and spell power.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 5
+    },
+    {
+        "name": "Mage's Robes",
+        "description": "Enhances the spellcasting abilities of mages.",
+        "cost": 227068,
+        "gains": 17718,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 15,
+        "factionId": 6
+    },
+    {
+        "name": "Throwing Axes",
+        "description": "Allows Orcs to throw axes at enemies from a distance.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 1
+    },
+    {
+        "name": "Elven Cloaks",
+        "description": "Grants invisibility to units for a short duration.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 2
+    },
+    {
+        "name": "Hellfire Grenades",
+        "description": "Explosives that deal fire damage and spread flames.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 3
+    },
+    {
+        "name": "Holy Relics",
+        "description": "Powerful artifacts that grant various bonuses to the angel army.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 4
+    },
+    {
+        "name": "Blight Bombs",
+        "description": "Explosives that deal damage and spread blight, weakening enemies.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 5
+    },
+    {
+        "name": "Improved Shields",
+        "description": "Increases the size and durability of shields.",
+        "cost": 295189,
+        "gains": 23034,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 16,
+        "factionId": 6
+    },
+    {
+        "name": "Grappling Hooks",
+        "description": "Enables Orcs to scale walls and climb obstacles.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 1
+    },
+    {
+        "name": "Treetop Walkers",
+        "description": "Allows elves to move through forests with increased speed and stealth.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 2
+    },
+    {
+        "name": "Demonic Wings",
+        "description": "Grants temporary flight to ground units.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 3
+    },
+    {
+        "name": "Divine Aegis",
+        "description": "Creates a protective shield that absorbs incoming damage.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 4
+    },
+    {
+        "name": "Soul Gems",
+        "description": "Collects souls from fallen enemies, granting bonuses to the undead army.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 5
+    },
+    {
+        "name": "Horse Breeder",
+        "description": "Improves the quality and speed of cavalry horses.",
+        "cost": 383746,
+        "gains": 29944,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 17,
+        "factionId": 6
+    },
+    {
+        "name": "War Banners",
+        "description": "Boosts the morale and combat effectiveness of nearby units.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 1
+    },
+    {
+        "name": "Nature's Boon",
+        "description": "Creates a healing aura that restores health to nearby allies.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 2
+    },
+    {
+        "name": "Banner of Torment",
+        "description": "Instills fear and weakens the resolve of nearby enemies.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 3
+    },
+    {
+        "name": "Banner of Righteousness",
+        "description": "Inspires courage and strengthens the resolve of nearby allies.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 4
+    },
+    {
+        "name": "Banner of Undeath",
+        "description": "Instills fear and weakens the resolve of nearby enemies.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 5
+    },
+    {
+        "name": "Banner of Courage",
+        "description": "Inspires nearby units, increasing their morale and combat effectiveness.",
+        "cost": 498869,
+        "gains": 38927,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 18,
+        "factionId": 6
+    },
+    {
+        "name": "Totem of Protection",
+        "description": "Provides a protective aura that reduces incoming damage.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 1
+    },
+    {
+        "name": "Elven Song",
+        "description": "A magical melody that boosts morale and combat effectiveness of nearby units.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 2
+    },
+    {
+        "name": "Soul Cage",
+        "description": "Traps enemy souls, granting bonuses to the demon army.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 3
+    },
+    {
+        "name": "Angelic Trumpets",
+        "description": "Sound a call that buffs allies and weakens enemies.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 4
+    },
+    {
+        "name": "Necromantic Scrolls",
+        "description": "For powerful necromantic spells and rituals.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 5
+    },
+    {
+        "name": "Healing Potions",
+        "description": "Provides instant healing to injured units.",
+        "cost": 648530,
+        "gains": 50605,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 19,
+        "factionId": 6
+    },
+    {
+        "name": "Drums of Rage",
+        "description": "Increases attack speed and movement speed of nearby units.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 1
+    },
+    {
+        "name": "Moonstone Amulets",
+        "description": "Enhances magical power and reduces mana cost of spells.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 2
+    },
+    {
+        "name": "Demonic Rituals",
+        "description": "For powerful rituals that empower the demon army and weaken enemies.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 3
+    },
+    {
+        "name": "Divine Intervention",
+        "description": "Calls upon divine power to heal and resurrect fallen allies.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 4
+    },
+    {
+        "name": "Tombstone Ward",
+        "description": "Creates a protective barrier that reduces incoming damage and heals undead units.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 5
+    },
+    {
+        "name": "Mana Potions",
+        "description": "Restores mana to spellcasting units.",
+        "cost": 843089,
+        "gains": 65786,
+        "costGainingMultiplier": 1.8,
+        "armoryId": 20,
+        "factionId": 6
+    },
+];
 
-const factionData = [];
+
+
+const factionData = [
+    {
+        "factionId": 1,
+        "factionName": "Orc",
+        "description": "A fierce and aggressive faction, known for their strength and bravery.",
+        "skills": ["Brute Force", "War Cry", "Savage Attack"],
+        "users": []
+    },
+    {
+        "factionId": 2,
+        "factionName": "Elf",
+        "description": "A graceful and cunning faction, specializing in archery and nature magic.",
+        "skills": ["Archery", "Stealth", "Nature's Blessing"],
+        "users": []
+    },
+    {
+        "factionId": 3,
+        "factionName": "Demon",
+        "description": "A ruthless faction, wielding dark magic and chaos.",
+        "skills": ["Dark Magic", "Firestorm", "Hellfire"],
+        "users": []
+    },
+    {
+        "factionId": 4,
+        "factionName": "Angel",
+        "description": "A noble and divine faction, blessed with holy powers.",
+        "skills": ["Healing Light", "Divine Protection", "Holy Wrath"],
+        "users": []
+    },
+    {
+        "factionId": 5,
+        "factionName": "Undead",
+        "description": "A grim faction, raising armies of the dead to overwhelm their enemies.",
+        "skills": ["Necromancy", "Plague", "Death's Grasp"],
+        "users": []
+    },
+    {
+        "factionId": 6,
+        "factionName": "Human",
+        "description": "A balanced and versatile faction, excelling in leadership and strategy.",
+        "skills": ["Swordsmanship", "Tactics", "Leadership"],
+        "users": []
+    }
+
+];
 
 
 // Function to seed the database
