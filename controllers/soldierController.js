@@ -10,6 +10,23 @@ exports.getAllSoldiers = async (req, res) => {
     }
 };
 
+// Fetch all spells for a user
+exports.getSoldiers = async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        // Fetch spells associated with the user
+        const soldiers = await Soldier.find({ userId });
+        if (!soldiers.length) {
+            return res.status(404).json({ message: 'No soldiers found for this user.' });
+        }
+
+        res.status(200).json(soldiers);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching soldiers', error: error.message });
+    }
+};
+
 // Get a specific soldier by ID
 exports.getSoldierById = async (req, res) => {
     try {

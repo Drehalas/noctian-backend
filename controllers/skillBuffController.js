@@ -18,7 +18,7 @@ exports.getSkillBuffs = async (req, res) => {
         //const spells = skillBuffs.map(buff => buff.spells);
 
 
-        res.status(200).json({ skills });
+        res.status(200).json({ skillBuffs });
     } catch (error) {
         console.error('Error fetching skill buffs:', error);
         res.status(500).json({ message: 'Failed to fetch skill buffs' });

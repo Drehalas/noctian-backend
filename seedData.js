@@ -5,7 +5,11 @@ const Soldier = require('./models/soldierModel');
 const Spell = require('./models/spellModel');
 const Artifact = require('./models/artifactModel');
 const Friend = require('./models/friendModel');
-const SkillBuff = require('./models/skillBuffModel'); // Adjust path as needed
+const SkillBuff = require('./models/skillBuffModel');
+const User = require ('./models/userModel');
+const UserAuth = require('./models/userAuthModel');
+const War = require ('./models/warModel');
+
 require('dotenv').config();
 
 // Connect to MongoDB
@@ -1298,6 +1302,22 @@ const skillBuffData = [
         type: 'spell',
     },
 ];
+
+const warData = [
+    {
+        nextWarTime: new Date(Date.now() + 2 * 60 * 60 * 1000), // 2 hours from now
+        createdAt: new Date()
+    },
+    {
+        nextWarTime: new Date(Date.now() + 4 * 60 * 60 * 1000), // 4 hours from now
+        createdAt: new Date()
+    },
+    {
+        nextWarTime: new Date(Date.now() + 6 * 60 * 60 * 1000), // 6 hours from now
+        createdAt: new Date()
+    }
+];
+
 // Function to seed the database
 const seedDatabase = async () => {
     try {
@@ -1307,6 +1327,9 @@ const seedDatabase = async () => {
         await Artifact.deleteMany({});
         await Friend.deleteMany({});
         await Hero.deleteMany({});
+        await User.deleteMany({});
+        await UserAuth.deleteMany({});
+        await War.deleteMany({});
 
         await Ladder.insertMany(ladderData);
         console.log('Ladders seeded successfully!');
@@ -1328,6 +1351,16 @@ const seedDatabase = async () => {
 
         await Hero.insertMany(heroData); // Insert new Skill & Buff data
         console.log('Hero seeded successfully!');
+
+        await User.insertMany(userData);
+        console.log('User seeded successfully!');
+
+        await UserAuth.insertMany(userAuthData);
+        console.log('UserAuth seeded successfully!');
+
+        await War.insertMany(warData);
+        console.log('War seeded successfully!');
+
 
         await mongoose.connection.close();
         console.log('Database seeding completed and connection closed.');

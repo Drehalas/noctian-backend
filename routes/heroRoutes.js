@@ -1,11 +1,9 @@
 const express = require('express');
-const { getHeroByUserId, upgradeHero } = require('../controllers/heroController');
+const { getHeroByUserId, upgradeHero, getHero} = require('../controllers/heroController');
 const router = express.Router();
 
-// Fetch hero by user ID
-router.get('/hero/:userId', getHeroByUserId);
-
-// Upgrade a specific hero's item
-router.post('/hero/upgrade', upgradeHero);
+router.get('/:userId', getHeroByUserId);
+router.get('/', getHero);
+router.post('/upgrade', upgradeHero);
 
 module.exports = router;

@@ -1,28 +1,6 @@
 const User = require('../models/modelCombinations/userModel');
 
-// Function to create a new user
-const createUser = async (req, res) => {
-    const { username, email, password } = req.body;
 
-    try {
-        // Create a new user instance
-        const newUser = new User({
-            username,
-            email,
-            password,  // In a real app, ensure to hash the password before saving!
-        });
-
-        // Save the user to the database
-        const savedUser = await newUser.save();
-
-        res.status(201).json(savedUser);
-    } catch (err) {
-        console.error('Error creating user:', err);
-        res.status(500).json({ message: 'Internal Server Error' });
-    }
-};
-
-// Get all users
 exports.getAllUsers = async (req, res) => {
     try {
         const users = await User.find();
@@ -32,7 +10,6 @@ exports.getAllUsers = async (req, res) => {
     }
 };
 
-// Get a specific user by ID
 exports.getUserById = async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
@@ -43,7 +20,6 @@ exports.getUserById = async (req, res) => {
     }
 };
 
-// Register a new user
 exports.registerUser = async (req, res) => {
     const user = new User(req.body);
     try {
@@ -54,7 +30,6 @@ exports.registerUser = async (req, res) => {
     }
 };
 
-// Update user information by ID
 exports.updateUser = async (req, res) => {
     try {
         const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -65,7 +40,6 @@ exports.updateUser = async (req, res) => {
     }
 };
 
-// Delete a user by ID
 exports.deleteUser = async (req, res) => {
     try {
         const user = await User.findByIdAndDelete(req.params.id);
@@ -76,4 +50,3 @@ exports.deleteUser = async (req, res) => {
     }
 };
 
-module.exports = { createUser };

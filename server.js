@@ -12,6 +12,8 @@ const artifactRoutes = require('./routes/artifactRoutes');
 const heroRoutes = require('./routes/heroRoutes');
 const armoryRoutes = require('./routes/armoryRoutes');
 const warRoutes =require('./routes/warRoutes');
+const soldierRoutes = require('./routes/soldierRoutes');
+const userAuthRoutes = require('./routes/userAuthRoutes');
 
 // Initialize the Express application
 const app = express();
@@ -25,14 +27,16 @@ connectDB();
 // Existing routes
 app.use('/api/faction', factionRoutes);
 app.use('/api/spell', spellRoutes);
+app.use('/api/soldier', soldierRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/userauth', userAuthRoutes);
 app.use('/api/friend', friendRoutes);
 app.use('/api/artifact', artifactRoutes);
 app.use('/api/ladder', ladderRoutes);
 app.use('/api/skillbuff', skillBuffRoutes);
 app.use('/api/hero', heroRoutes);
 app.use('/api/armory', armoryRoutes);
-app.use('/api/nextwar', warRoutes); // Use armory routes
+app.use('/api/war', warRoutes); // Use armory routes
 
 app.get('/', (req, res) => {
     res.send('Hello, Noctian Universe!');

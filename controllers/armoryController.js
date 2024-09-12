@@ -1,4 +1,4 @@
-const Armory = require('../models/armoryModel'); // Adjust the path as needed
+const Armory = require('../models/armoryModel');
 
 // Get all armories
 exports.getAllArmories = async (req, res) => {
@@ -7,6 +7,22 @@ exports.getAllArmories = async (req, res) => {
         res.status(200).json(armories);
     } catch (error) {
         res.status(500).json({ error: error.message });
+    }
+};
+
+
+exports.getArmories = async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        const armories = await Armory.find({ userId });
+        if (!armories.length) {
+            return res.status(404).json({ message: 'No armories found for this user.' });
+        }
+
+        res.status(200).json(armories);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching armories', error: error.message });
     }
 };
 

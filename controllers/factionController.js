@@ -1,5 +1,5 @@
 // controllers/factionController.js
-const Faction = require('../models/factionModel');  // Make sure you have a Faction model defined in models folder
+const Faction = require('../models/factionModel');
 
 // Get all factions
 exports.getAllFactions = async (req, res) => {
@@ -8,6 +8,21 @@ exports.getAllFactions = async (req, res) => {
         res.status(200).json(factions);
     } catch (err) {
         res.status(500).json({ message: err.message });
+    }
+};
+
+exports.getFaction = async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        const faction = await Faction.find({ userId });
+        if (!faction.length) {
+            return res.status(404).json({ message: 'No faction found for this user.' });
+        }
+
+        res.status(200).json(faction);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching factions', error: error.message });
     }
 };
 

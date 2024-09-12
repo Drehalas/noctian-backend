@@ -28,7 +28,6 @@ router.post('/', async (req, res) => {
     }
 });
 
-// GET route to get all artifacts
 router.get('/', async (req, res) => {
     try {
         const artifacts = await Artifact.find();
@@ -38,7 +37,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-// GET route to get an artifact by ID
 router.get('/:id', async (req, res) => {
     try {
         const artifact = await Artifact.findById(req.params.id);
@@ -52,7 +50,6 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// PUT route to update an artifact by ID
 router.put('/:id', async (req, res) => {
     try {
         const { name, description, cost, gains, costGainingMultiplier, faction, imageUrl, raidIncomePerHour } = req.body;
@@ -73,7 +70,6 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-// DELETE route to delete an artifact by ID
 router.delete('/:id', async (req, res) => {
     try {
         const artifact = await Artifact.findByIdAndDelete(req.params.id);
@@ -87,7 +83,6 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-// POST route to upgrade an artifact
 router.post('/upgrade', async (req, res) => {
     try {
         const { userId, id } = req.body;

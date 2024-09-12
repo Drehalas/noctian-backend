@@ -4,8 +4,11 @@ const mongoose = require('mongoose');
 const userGameDataSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'UserAuth',  // Reference to the UserAuth model
-        required: true
+        ref: 'UserGameData',
+        required: true,
+        default: function() {
+            return new mongoose.Types.ObjectId(); // Automatically assign a MongoDB _id
+        }
     },
     incomePerHour: {
         type: Number,

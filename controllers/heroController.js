@@ -1,7 +1,7 @@
 const Hero = require('../models/heroModel');
 
 // Fetch hero data by userId
-const getHeroByUserId = async (req, res) => {
+exports.getHeroByUserId = async (req, res) => {
     try {
         const hero = await Hero.findOne({ userId: req.params.userId });
         if (!hero) {
@@ -13,8 +13,22 @@ const getHeroByUserId = async (req, res) => {
     }
 };
 
-// Upgrade a hero's item (leveling up an item)
-const upgradeHero = async (req, res) => {
+exports.getHero = async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        const hero = await Hero.find({ userId });
+        if (!hero.length) {
+            return res.status(404).json({ message: 'No heroes found for this user.' });
+        }
+
+        res.status(200).json(hero);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching armories', error: error.message });
+    }
+};
+
+exports.upgradeHero = async (req, res) => {
     const { userId, itemId } = req.body;  // Assuming you send the userId and itemId from frontend
 
     try {
@@ -29,7 +43,6 @@ const upgradeHero = async (req, res) => {
             return res.status(404).json({ message: 'Item not found' });
         }
 
-        // Simulate an upgrade: increase the item's level and recalculate cost
         item.level += 1;
         item.cost = Math.round(item.cost * item.costMultiplier);
 
@@ -41,4 +54,3 @@ const upgradeHero = async (req, res) => {
     }
 };
 
-module.exports = { getHeroByUserId, upgradeHero };
