@@ -1,113 +1,87 @@
 const Armory = require('../models/armoryModel');
 
-// Get all armories
-exports.getAllArmories = async (req, res) => {
-    try {
-        const armories = await Armory.find();
-        res.status(200).json(armories);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-};
-
-
-exports.getArmories = async (req, res) => {
-    const { userId } = req.query;
-
-    try {
-        const armories = await Armory.find({ userId });
-        if (!armories.length) {
-            return res.status(404).json({ message: 'No armories found for this user.' });
-        }
-
-        res.status(200).json(armories);
-    } catch (error) {
-        res.status(500).json({ message: 'Error fetching armories', error: error.message });
-    }
-};
-
-// Create a new armory
-exports.createArmory = async (req, res) => {
+// Create new armory item
+exports.createArmoryItem = async (req, res) => {
     const { name, description, cost, gains, costGainingMultiplier } = req.body;
 
     try {
-        const newArmory = new Armory({ name, description, cost, gains, costGainingMultiplier });
-        await newArmory.save();
-        res.status(201).json(newArmory);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
-    }
-};
+        const newArmoryItem = new Armory({
+            name,
+            description,
+            cost,
+            gains,
+            costGainingMultiplier
+        });
 
-// Get a specific armory by ID
-exports.getArmoryById = async (req, res) => {
-    try {
-        const armory = await Armory.findById(req.params.id);
-        if (armory) {
-            res.status(200).json(armory);
-        } else {
-            res.status(404).json({ error: 'Armory not found' });
+        const savedArmoryItem = await newArmoryItem.save();
+        res.status(201).json(savedArmoryItem);
+    } catch (err) {
+        if (err.code === 11000) { // Duplicate key error (unique name)
+            return res.status(400).json({ message: 'Armory item with this name already exists' });
         }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
+        console.error('Error creating armory item:', err);
+        res.status(500).json({ message: 'Internal Server Error' });
     }
 };
 
-// Update an armory by ID
-exports.updateArmory = async (req, res) => {
+exports.getAllArmoryItems = async (req, res) => {
+    try {
+        const armoryItems = await Armory.find();
+        console.log('Armory items fetched:', armoryItems); // Log the fetched data
+        res.status(200).json(armoryItems);
+    } catch (err) {
+        console.error('Error fetching armory items:', err);
+        res.status(500).json({ message: 'Error fetching armory items' });
+    }
+};
+
+
+// Get armory item by ID
+exports.getArmoryItemById = async (req, res) => {
+    try {
+        const armoryItem = await Armory.findById(req.params.id);
+        if (!armoryItem) {
+            return res.status(404).json({ message: 'Armory item not found' });
+        }
+        res.status(200).json(armoryItem);
+    } catch (err) {
+        console.error('Error fetching armory item:', err);
+        res.status(500).json({ message: 'Error fetching armory item' });
+    }
+};
+
+// Update armory item by ID
+exports.updateArmoryItemById = async (req, res) => {
     const { name, description, cost, gains, costGainingMultiplier } = req.body;
 
     try {
-        const armory = await Armory.findByIdAndUpdate(
+        const updatedArmoryItem = await Armory.findByIdAndUpdate(
             req.params.id,
             { name, description, cost, gains, costGainingMultiplier },
-            { new: true, runValidators: true }
+            { new: true }
         );
 
-        if (armory) {
-            res.status(200).json(armory);
-        } else {
-            res.status(404).json({ error: 'Armory not found' });
+        if (!updatedArmoryItem) {
+            return res.status(404).json({ message: 'Armory item not found' });
         }
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+
+        res.status(200).json(updatedArmoryItem);
+    } catch (err) {
+        console.error('Error updating armory item:', err);
+        res.status(500).json({ message: 'Error updating armory item' });
     }
 };
 
-// Delete an armory by ID
-exports.deleteArmory = async (req, res) => {
+// Delete armory item by ID
+exports.deleteArmoryItemById = async (req, res) => {
     try {
-        const armory = await Armory.findByIdAndDelete(req.params.id);
-
-        if (armory) {
-            res.status(200).json({ message: 'Armory deleted successfully' });
-        } else {
-            res.status(404).json({ error: 'Armory not found' });
+        const deletedArmoryItem = await Armory.findByIdAndDelete(req.params.id);
+        if (!deletedArmoryItem) {
+            return res.status(404).json({ message: 'Armory item not found' });
         }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-};
-
-// Upgrade an armory
-exports.upgradeArmory = async (req, res) => {
-    const { userId, id } = req.body;
-
-    // Here you might have additional logic for upgrading based on user or armory state
-    try {
-        const armory = await Armory.findById(id);
-
-        if (armory) {
-            // Example upgrade logic: Increase the gains and cost multiplier
-            armory.gains += 10; // Example increment
-            armory.costGainingMultiplier += 0.1; // Example increment
-
-            await armory.save();
-            res.status(200).json({ message: 'Armory upgraded successfully', armory });
-        } else {
-            res.status(404).json({ error: 'Armory not found' });
-        }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(200).json({ message: 'Armory item deleted successfully' });
+    } catch (err) {
+        console.error('Error deleting armory item:', err);
+        res.status(500).json({ message: 'Error deleting armory item' });
     }
 };

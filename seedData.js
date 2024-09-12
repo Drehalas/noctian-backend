@@ -9,6 +9,8 @@ const SkillBuff = require('./models/skillBuffModel');
 const User = require ('./models/userModel');
 const UserAuth = require('./models/userAuthModel');
 const War = require ('./models/warModel');
+const Armory = require('./models/armoryModel');
+const Faction = require('./models/factionModel');
 
 require('dotenv').config();
 
@@ -21,7 +23,6 @@ mongoose.connect(process.env.MONGODB_URI, {
     .catch(err => console.error('MongoDB connection error:', err));
 
 
-// Ladder Data for seeding
 const ladderData = [
     // Faction: Orc
     { ladderId: 11, name: 'Great Warchief', faction: 'ORC' },
@@ -1163,7 +1164,6 @@ const friendData = [
         addFriendName: 'Acolyte',
     }
 ];
-// seedData.js
 
 const userAuthData = [
     {
@@ -1318,6 +1318,11 @@ const warData = [
     }
 ];
 
+const armoryData = [];
+
+const factionData = [];
+
+
 // Function to seed the database
 const seedDatabase = async () => {
     try {
@@ -1329,6 +1334,8 @@ const seedDatabase = async () => {
         await Hero.deleteMany({});
         await User.deleteMany({});
         await UserAuth.deleteMany({});
+        await Faction.deleteMany({});
+        await Armory.deleteMany({});
         await War.deleteMany({});
 
         await Ladder.insertMany(ladderData);
@@ -1360,6 +1367,12 @@ const seedDatabase = async () => {
 
         await War.insertMany(warData);
         console.log('War seeded successfully!');
+
+        await Armory.insertMany(armoryData);
+        console.log('Armory seeded successfully!');
+
+        await Faction.insertMany(factionData);
+        console.log('Faction seeded successfully!');
 
 
         await mongoose.connection.close();
