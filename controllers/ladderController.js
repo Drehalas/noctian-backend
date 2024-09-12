@@ -60,3 +60,15 @@ exports.deleteLadder = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+exports.getLadderByUserId = async (req, res) => {
+    try {
+        const ladder = await Ladder.findOne({ userId: req.params.userId });
+        if (!ladder) {
+            return res.status(404).json({ message: 'Ladder not found for this user' });
+        }
+        res.status(200).json(ladder);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
