@@ -9,6 +9,22 @@ exports.getAllSpells = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 };
+// Fetch all spells for a user
+exports.getSpells = async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        // Fetch spells associated with the user
+        const spells = await Spell.find({ userId });
+        if (!spells.length) {
+            return res.status(404).json({ message: 'No spells found for this user.' });
+        }
+
+        res.status(200).json(spells);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching spells', error: error.message });
+    }
+};
 
 // Get a specific spell by ID
 exports.getSpellById = async (req, res) => {
@@ -51,5 +67,27 @@ exports.deleteSpell = async (req, res) => {
         res.status(200).json({ message: 'Spell deleted' });
     } catch (err) {
         res.status(500).json({ message: err.message });
+    }
+};
+
+
+// Upgrade a spell
+exports.upgradeSpell = async (req, res) => {
+    const { userId, id: spellId } = req.body.params;
+
+    try {
+        const spell = await Spell.findOne({ _id: spellId, userId });
+        if (!spell) {
+            return res.status(404).json({ message: 'Spell not found for this user.' });
+        }
+
+        // Upgrade logic: Increase level, adjust stats, or perform other upgrades
+        spell.level += 1;
+        spell.power += spell.powerGain;  // Assuming the spell has a power and powerGain field
+
+        await spell.save();
+        res.status(200).json({ message: 'Spell upgraded successfully', spell });
+    } catch (error) {
+        res.status(500).json({ message: 'Error upgrading spell', error: error.message });
     }
 };

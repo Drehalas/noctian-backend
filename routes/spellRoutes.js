@@ -17,4 +17,7 @@ router.put('/:id', spellController.updateSpell);
 // Route to delete a spell by ID
 router.delete('/:id', spellController.deleteSpell);
 
+// Route to upgrade a specific spell by ID
+router.post('/upgrade', spellController.upgradeSpell);
+
 module.exports = router;
