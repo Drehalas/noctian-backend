@@ -5,14 +5,12 @@ exports.createUser = async (req, res) => {
     const { userId, username, factionType } = req.body;
 
     try {
-        // Create a new user instance
         const newUser = new UserAuth({
             userId,
             username,
             factionType
         });
 
-        // Save the user to the database
         const savedUser = await newUser.save();
 
         res.status(201).json(savedUser);
@@ -25,7 +23,6 @@ exports.createUser = async (req, res) => {
     }
 };
 
-// Get all users
 exports.getAllUsers = async (req, res) => {
     try {
         const users = await UserAuth.find();
@@ -36,7 +33,6 @@ exports.getAllUsers = async (req, res) => {
     }
 };
 
-// Get user by userId
 exports.getUserById = async (req, res) => {
     try {
         const user = await UserAuth.findOne({ userId: req.params.userId });
