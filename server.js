@@ -30,8 +30,6 @@ app.use('/api/artifacts', artifactRoutes);
 app.use('/api/ladderRoutes', ladderRoutes);
 app.use('/api/skillbuffs', skillBuffRoutes);
 app.use('/api/hero', heroRoutes);
-
-// Add armory routes
 app.use('/api/armories', armoryRoutes); // Use armory routes
 
 app.get('/', (req, res) => {

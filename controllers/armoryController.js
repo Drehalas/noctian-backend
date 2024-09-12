@@ -1,4 +1,4 @@
-const Armory = require('../models/armory'); // Adjust the path as needed
+const Armory = require('../models/armoryModel'); // Adjust the path as needed
 
 // Get all armories
 exports.getAllArmories = async (req, res) => {
