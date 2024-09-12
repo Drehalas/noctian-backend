@@ -53,3 +53,21 @@ exports.deleteSoldier = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 };
+
+// controllers/soldierController.js
+
+// Upgrade soldier
+exports.upgradeSoldier = (req, res) => {
+    const { userId, id } = req.body;
+
+    // Validate input
+    if (!userId || !id) {
+        return res.status(400).json({ error: 'Missing userId or id' });
+    }
+
+    // Your upgrade logic here (e.g., update soldier's level, stats, etc.)
+    console.log(`Upgrading soldier ${id} for user ${userId}`);
+
+    // Respond with success
+    res.status(200).json({ message: 'Soldier upgraded successfully' });
+};
