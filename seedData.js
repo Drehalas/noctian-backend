@@ -1181,14 +1181,14 @@ const userData  = [
         increaseAmount: 55,
         currentGold: 1000,
         level: 5,
-        avatarImage: "1. Great Warchief.png",
+        avatarImage: "1. png",
         exp: 95,
         currentMana: 50,
         totalMana: 100,
         title: "Wormfood",
         factionType: "ORC",
         attackCritChance: 1,
-        attackCritIncome: 0,
+        attackCritIncome: 1,
     },
 ];
 

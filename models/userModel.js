@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 // Game-related User schema
-const userGameDataSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'UserGameData',
+        ref: 'user',
         required: true,
         default: function() {
             return new mongoose.Types.ObjectId(); // Automatically assign a MongoDB _id
@@ -64,5 +64,5 @@ const userGameDataSchema = new mongoose.Schema({
     }
 });
 
-const UserGameData = mongoose.model('UserGameData', userGameDataSchema);
+const UserGameData = mongoose.model('user', userSchema);
 module.exports = UserGameData;
