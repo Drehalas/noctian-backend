@@ -22,15 +22,15 @@ app.use(bodyParser.json());
 connectDB();
 
 // Existing routes
-app.use('/api/factions', factionRoutes);
+app.use('/api/faction', factionRoutes);
 app.use('/api/spell', spellRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/friends', friendRoutes);
-app.use('/api/artifacts', artifactRoutes);
-app.use('/api/ladderRoutes', ladderRoutes);
-app.use('/api/skillbuffs', skillBuffRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/friend', friendRoutes);
+app.use('/api/artifact', artifactRoutes);
+app.use('/api/ladder', ladderRoutes);
+app.use('/api/skillbuff', skillBuffRoutes);
 app.use('/api/hero', heroRoutes);
-app.use('/api/armories', armoryRoutes); // Use armory routes
+app.use('/api/armory', armoryRoutes); // Use armory routes
 
 app.get('/', (req, res) => {
     res.send('Hello, Noctian Universe!');
