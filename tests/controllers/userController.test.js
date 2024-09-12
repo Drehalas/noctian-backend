@@ -1,7 +1,7 @@
 // tests/controllers/userController.test.js
 const request = require('supertest');
 const server = require('../../server');
-const User = require('../../models/userModel');
+const User = require('../../models/modelCombinations/userModel');
 
 describe('User Controller', () => {
     let userId;

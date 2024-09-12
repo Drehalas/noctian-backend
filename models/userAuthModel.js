@@ -15,7 +15,17 @@ const userAuthSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    }
+    },
+    currentTon: {
+        type: Number,
+        default: 0
+    },
+    factionType: {
+        type: String,
+        enum: ['ORC', 'HUMAN', 'UNDEAD', 'ANGEL', 'DEMON', 'ELF'],
+        required: true,
+        immutable: true  // Static, cannot change
+    },
 });
 
 const UserAuth = mongoose.model('UserAuth', userAuthSchema);

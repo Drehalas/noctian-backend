@@ -1,6 +1,6 @@
 // tests/models/userModel.test.js
 const mongoose = require('mongoose');
-const User = require('../../models/userModel');
+const User = require('../../models/modelCombinations/userModel');
 
 describe('User Model Test', () => {
     beforeAll(async () => {

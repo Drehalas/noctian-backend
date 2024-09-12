@@ -520,8 +520,6 @@ const heroData = [
     { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'UNDEAD' }
 ];
 
-
-
 const soldierData = [
     // Orc Faction
     { name: 'Kobold Slave', description: 'Weakest unit, used as meat shields.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ORC' },
@@ -1163,6 +1161,33 @@ const friendData = [
 ];
 // seedData.js
 
+const userAuthData = [
+    {
+        username: "Arthur8071",
+        createdAt: "12.09.2024",
+        factionType: "ORC",
+        currentTon: 350,
+    },
+];
+
+const userData  = [
+    {
+        username: "Arthur8071",
+        incomePerHour: "500000",
+        increaseAmount: 55,
+        currentGold: 1000,
+        level: 5,
+        avatarImage: "1. Great Warchief.png",
+        exp: 95,
+        currentMana: 50,
+        totalMana: 100,
+        title: "Wormfood",
+        factionType: "ORC",
+        attackCritChance: 1,
+        attackCritIncome: 0,
+    },
+];
+
 const skillBuffData = [
     {
         name: 'Multi Attack',
@@ -1174,6 +1199,7 @@ const skillBuffData = [
         totalSkillGain: '1',
         cooldown: '',
         refresh: '',
+        type: 'skill',
     },
     {
         name: 'Mana Pool',
@@ -1185,6 +1211,7 @@ const skillBuffData = [
         totalSkillGain: '1000',
         cooldown: '',
         refresh: '',
+        type: 'skill',
     },
     {
         name: 'Attack Crit Chance',
@@ -1196,6 +1223,7 @@ const skillBuffData = [
         totalSkillGain: '1 %',
         cooldown: '',
         refresh: '',
+        type: 'skill',
     },
     {
         name: 'Attack Crit Income',
@@ -1207,6 +1235,7 @@ const skillBuffData = [
         totalSkillGain: '10 %',
         cooldown: '',
         refresh: '',
+        type: 'skill',
     },
     {
         name: 'Mana Potion',
@@ -1218,6 +1247,7 @@ const skillBuffData = [
         totalSkillGain: '',
         cooldown: '2 hour',
         refresh: '24 hour',
+        type: 'potion',
     },
     {
         name: "Magic God's Blood Potion",
@@ -1226,9 +1256,10 @@ const skillBuffData = [
         gains: '1',
         level: 0,
         costMultiplier: 1,
-        totalSkillGain: '3 per sec',
+        totalSkillGain: '4 per sec',
         cooldown: '',
         refresh: '',
+        type: 'item',
     },
     {
         name: "Hero's Pocket Portal",
@@ -1240,6 +1271,7 @@ const skillBuffData = [
         totalSkillGain: '0 %',
         cooldown: '',
         refresh: '',
+        type: 'item',
     },
     {
         name: "Army's Raid Portal",
@@ -1251,6 +1283,7 @@ const skillBuffData = [
         totalSkillGain: '0 %',
         cooldown: '',
         refresh: '',
+        type: 'item',
     },
     {
         name: "The Ancient's Transformation Ritual",
@@ -1262,6 +1295,7 @@ const skillBuffData = [
         totalSkillGain: '',
         cooldown: '',
         refresh: '',
+        type: 'spell',
     },
 ];
 // Function to seed the database
@@ -1294,8 +1328,6 @@ const seedDatabase = async () => {
 
         await Hero.insertMany(heroData); // Insert new Skill & Buff data
         console.log('Hero seeded successfully!');
-
-
 
         await mongoose.connection.close();
         console.log('Database seeding completed and connection closed.');

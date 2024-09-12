@@ -2,7 +2,7 @@
 const request = require('supertest');
 const mongoose = require('mongoose');
 const server = require('../../server');
-const User = require('../../models/userModel');
+const User = require('../../models/modelCombinations/userModel');
 
 describe('User Routes', () => {
     beforeAll(async () => {
