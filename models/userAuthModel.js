@@ -4,8 +4,11 @@ const mongoose = require('mongoose');
 const userAuthSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
+        ref: 'UserGameData',
         required: true,
-        unique: true
+        default: function() {
+            return new mongoose.Types.ObjectId(); // Automatically assign a MongoDB _id
+        }
     },
     username: {
         type: String,
