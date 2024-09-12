@@ -72,3 +72,23 @@ exports.deleteArtifact = async (req, res) => {
         res.status(500).json({ message: 'Error deleting artifact', error: err.message });
     }
 };
+
+// Upgrade an artifact
+exports.upgradeArtifact = async (req, res) => {
+    try {
+        const { userId, id } = req.body; // `userId` can be used for authorization or tracking
+        const artifact = await Artifact.findById(id);
+
+        if (!artifact) {
+            return res.status(404).json({ message: 'Artifact not found' });
+        }
+
+        // Example upgrade logic: Increase some attribute
+        artifact.gains += 10; // Example increment, adjust as needed
+
+        await artifact.save();
+        res.status(200).json({ message: 'Artifact upgraded successfully', artifact });
+    } catch (err) {
+        res.status(500).json({ message: 'Error upgrading artifact', error: err.message });
+    }
+};
