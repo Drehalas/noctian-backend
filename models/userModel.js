@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
             return new mongoose.Types.ObjectId(); // Automatically assign a MongoDB _id
         }
     },
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
     incomePerHour: {
         type: Number,
         default: 0

@@ -2401,8 +2401,6 @@ const armoryData = [
     },
 ];
 
-
-
 const factionData = [
     {
         "factionId": 1,
@@ -2449,8 +2447,6 @@ const factionData = [
 
 ];
 
-
-// Function to seed the database
 const seedDatabase = async () => {
     try {
         await Ladder.deleteMany({});

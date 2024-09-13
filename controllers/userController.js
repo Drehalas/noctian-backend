@@ -7,6 +7,7 @@ exports.createUserData = async (req, res) => {
     try {
         const newUserData = new UserData({
             userId,
+            username,
             incomePerHour,
             increaseAmount,
             currentGold,
