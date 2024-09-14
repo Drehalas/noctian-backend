@@ -88,3 +88,30 @@ exports.upgradeSoldier = (req, res) => {
     // Respond with success
     res.status(200).json({ message: 'Soldier upgraded successfully' });
 };
+
+// Create new soldier
+exports.createSoldier = async (req, res) => {
+    const { name, description, cost, gains, costGainingMultiplier, faction, imageUrl } = req.body;
+
+    try {
+        const newSoldier = new Soldier({
+            name,
+            description,
+            cost,
+            gains,
+            costGainingMultiplier,
+            faction,
+            imageUrl // New field
+        });
+
+        const savedSoldier = await newSoldier.save();
+        res.status(201).json(savedSoldier);
+    } catch (err) {
+        if (err.code === 11000) { // Duplicate key error (unique name)
+            return res.status(400).json({ message: 'Soldier with this name already exists' });
+        }
+        console.error('Error creating soldier:', err);
+        res.status(500).json({ message: 'Error creating soldier', error: err });
+    }
+};
+

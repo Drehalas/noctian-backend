@@ -54,3 +54,25 @@ exports.upgradeHero = async (req, res) => {
     }
 };
 
+// Create new hero
+exports.createHero = async (req, res) => {
+    const { name, description, cost, gains, multiplier, faction, imageUrl } = req.body;
+
+    try {
+        const newHero = new Hero({
+            name,
+            description,
+            cost,
+            gains,
+            multiplier: multiplier || 1, // Default multiplier to 1 if not provided
+            faction,
+            imageUrl // New field
+        });
+
+        const savedHero = await newHero.save();
+        res.status(201).json(savedHero);
+    } catch (err) {
+        console.error('Error creating hero:', err);
+        res.status(500).json({ message: 'Error creating hero', error: err });
+    }
+};
