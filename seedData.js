@@ -11,6 +11,7 @@ const UserAuth = require('./models/userAuthModel');
 const War = require ('./models/warModel');
 const Armory = require('./models/armoryModel');
 const Faction = require('./models/factionModel');
+const WarThrone = require('./models/warThroneModel'); // Adjust the path as necessaryNode
 
 require('dotenv').config();
 
@@ -280,7 +281,6 @@ const heroData = [
     { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
     { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
     { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
-
     // Faction: Elf
     { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
     { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
@@ -1356,6 +1356,23 @@ const warData = [
         createdAt: new Date()
     }
 ];
+
+// WarThrone Seed Data
+const warThroneData = {
+    warList: [
+        { id: 1, first: "ORCS", second: "ELVES" },
+        { id: 2, first: "DEMONS", second: "ANGELS" },
+        { id: 3, first: "UNDEADS", second: "HUMANS" }
+    ],
+    throneList: [
+        { faction: "ORCS", totalGold: "321.02B" },
+        { faction: "DEMONS", totalGold: "318.98B" },
+        { faction: "ANGELS", totalGold: "316.51B" },
+        { faction: "ELVES", totalGold: "314.27B" },
+        { faction: "HUMANS", totalGold: "311.51B" },
+        { faction: "UNDEADS", totalGold: "274.74B" }
+    ]
+};
 
 const armoryData = [
     {
@@ -2619,6 +2636,7 @@ const seedDatabase = async () => {
         await Faction.deleteMany({});
         await Armory.deleteMany({});
         await War.deleteMany({});
+        await WarThrone.deleteMany();
 
         await Ladder.insertMany(ladderData);
         console.log('Ladders seeded successfully!');
@@ -2656,6 +2674,8 @@ const seedDatabase = async () => {
         await Faction.insertMany(factionData);
         console.log('Faction seeded successfully!');
 
+        await WarThrone.create(warThroneData);
+        console.log('WarThrone data seeded successfully!');
 
         await mongoose.connection.close();
         console.log('Database seeding completed and connection closed.');
