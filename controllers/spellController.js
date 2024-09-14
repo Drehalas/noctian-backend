@@ -37,17 +37,6 @@ exports.getSpellById = async (req, res) => {
     }
 };
 
-// Create a new spell
-exports.createSpell = async (req, res) => {
-    const spell = new Spell(req.body);
-    try {
-        const newSpell = await spell.save();
-        res.status(201).json(newSpell);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
-    }
-};
-
 // Update a spell by ID
 exports.updateSpell = async (req, res) => {
     try {
@@ -91,3 +80,30 @@ exports.upgradeSpell = async (req, res) => {
         res.status(500).json({ message: 'Error upgrading spell', error: error.message });
     }
 };
+
+// Create new spell
+exports.createSpell = async (req, res) => {
+    const { name, description, cost, gains, costGainingMultiplier, faction, imageUrl } = req.body;
+
+    try {
+        const newSpell = new Spell({
+            name,
+            description,
+            cost,
+            gains,
+            costGainingMultiplier,
+            faction,
+            imageUrl // New field
+        });
+
+        const savedSpell = await newSpell.save();
+        res.status(201).json(savedSpell);
+    } catch (err) {
+        if (err.code === 11000) { // Duplicate key error (unique name)
+            return res.status(400).json({ message: 'Spell with this name already exists' });
+        }
+        console.error('Error creating spell:', err);
+        res.status(500).json({ message: 'Error creating spell', error: err });
+    }
+};
+

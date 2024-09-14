@@ -46,3 +46,28 @@ exports.upgradeSkillBuffs = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+exports.createSkillBuff = async (req, res) => {
+    const { name, description, cost, gains, level, costMultiplier, totalSkillGain, cooldown, refresh, iconSrc, imageUrl } = req.body;
+
+    try {
+        const newSkillBuff = new SkillBuff({
+            name,
+            description,
+            cost,
+            gains,
+            level,
+            costMultiplier,
+            totalSkillGain,
+            cooldown,
+            refresh,
+            iconSrc,
+            imageUrl  // New field
+        });
+
+        const savedSkillBuff = await newSkillBuff.save();
+        res.status(201).json(savedSkillBuff);
+    } catch (err) {
+        res.status(500).json({ message: 'Error creating skill buff', error: err });
+    }
+};

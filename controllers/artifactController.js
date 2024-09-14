@@ -92,3 +92,32 @@ exports.upgradeArtifact = async (req, res) => {
         res.status(500).json({ message: 'Error upgrading artifact', error: err.message });
     }
 };
+
+e// Create new artifact
+exports.createArtifact = async (req, res) => {
+    const { id, name, description, cost, gains, costGainingMultiplier, faction, raidIncomePerHour, imageUrl } = req.body;
+
+    try {
+        const newArtifact = new Artifact({
+            id,
+            name,
+            description,
+            cost,
+            gains,
+            costGainingMultiplier,
+            faction,
+            raidIncomePerHour: raidIncomePerHour || 0, // Default raidIncomePerHour to 0 if not provided
+            imageUrl // New field
+        });
+
+        const savedArtifact = await newArtifact.save();
+        res.status(201).json(savedArtifact);
+    } catch (err) {
+        if (err.code === 11000) { // Duplicate key error (unique name)
+            return res.status(400).json({ message: 'Artifact with this name already exists' });
+        }
+        console.error('Error creating artifact:', err);
+        res.status(500).json({ message: 'Error creating artifact', error: err });
+    }
+};
+
