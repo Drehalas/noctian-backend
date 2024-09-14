@@ -162,699 +162,697 @@ const ladderData = [
 
 const heroData = [
     // Faction: Orc
-    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armors defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armors defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ORC' },
+    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armors defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armors defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
     // Faction: Orc (continued)
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armors defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ORC' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ORC' },
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armors defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ORC',imageUrl: "" },
     // Faction: Human
-    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Pants Gem', description: "A lustrous stone that enhances leg armor's defensive capabilities", cost: 332526, gains: 26602, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'HUMAN' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'HUMAN' },
+    { name: 'Melee Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Pants Gem', description: "A lustrous stone that enhances leg armor's defensive capabilities", cost: 332526, gains: 26602, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'HUMAN',imageUrl: "" },
 
     // Faction: Elf
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ELF' },
+    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
     // Faction: Elf (continued)
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ELF' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ELF' },
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ELF',imageUrl: ""},
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ELF',imageUrl: "" },
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ELF' ,imageUrl: ""},
 
     // Faction: Demon
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'DEMON' },
+    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
     // Faction: Demon (continued)
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'DEMON' },
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
     // Faction: Demon (continued)
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'DEMON' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'DEMON' },
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'DEMON',imageUrl: "" },
     // Faction: Angel
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ANGEL' },
+    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'ANGEL',imageUrl: ""},
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
     // Faction: Angel (continued)
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ANGEL' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ANGEL' },
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'ANGEL',imageUrl: "" },
 
     // Faction: Undead
-    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'UNDEAD' },
+    { name: 'Meele Weapon', description: 'A well-balanced weapon made of quality steel', cost: 100, gains: 8, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ranged Weapon', description: 'A precise long-range weapon crafted for accuracy', cost: 150, gains: 12, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Off-Hand', description: 'A versatile item held in the non-dominant hand for defense or offense', cost: 225, gains: 18, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Chest Armor', description: 'Sturdy protection for the torso, forged from durable materials', cost: 338, gains: 27, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Pants', description: 'Flexible leg armor providing both mobility and defense', cost: 506, gains: 41, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Gloves', description: 'Reinforced hand protection allowing for dexterity in combat', cost: 759, gains: 61, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Feet', description: 'Reliable footwear designed for stability and protection in battle', cost: 1139, gains: 91, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Belt', description: 'A sturdy accessory that secures armor and holds essential items', cost: 1709, gains: 137, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Bracers', description: 'Arm guards that deflect blows and enhance striking power', cost: 2563, gains: 205, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Shoulder', description: 'Robust pauldrons that shield the upper body from attacks', cost: 3844, gains: 308, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
     // Faction: Undead (continued)
-    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'UNDEAD' },
-    // Faction: Undead (continued)
-    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'UNDEAD' },
-    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'UNDEAD' }
+    { name: 'Cloak', description: 'A flowing garment that offers concealment and weather protection', cost: 5767, gains: 461, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Neckless', description: "An ornate accessory that enhances the wearer's abilities", cost: 8650, gains: 692, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ring', description: 'A small but powerful magical item worn on the finger', cost: 12975, gains: 1038, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ring 2', description: 'An additional enchanted band complementing the first ring', cost: 19462, gains: 1557, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Trinket', description: 'A mysterious artifact imbued with unique magical properties', cost: 29193, gains: 2335, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Trinket 2', description: 'A second magical curio with its own set of mystical effects', cost: 43789, gains: 3503, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Melee Weapon Gem', description: 'A precious stone that augments close-combat prowess', cost: 65684, gains: 5255, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ranged Weapon Gem', description: 'A crystal that enhances accuracy and power in ranged attacks', cost: 98526, gains: 7882, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Off-Hand Gem', description: 'A jewel that boosts the effectiveness of off-hand equipment', cost: 147789, gains: 11823, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Chest Gem', description: "A radiant gem that reinforces chest armor's protective qualities", cost: 221684, gains: 17735, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Pants Gem', description: 'A lustrous stone that enhances leg armor\'s defensive capabilities', cost: 332526, gains: 26602, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Gloves Gem', description: 'A sparkling gem that improves hand-to-hand combat skills', cost: 498789, gains: 39903, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Feet Gem', description: 'A shimmering stone that increases agility and sure-footedness', cost: 748183, gains: 59855, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Belt Gem', description: "A gleaming jewel that bolsters the wearer's core strength", cost: 1122274, gains: 89782, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Bracers Gem', description: 'A brilliant gem that amplifies the power of arm strikes', cost: 1683411, gains: 134673, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Shoulder Gem', description: "A dazzling stone that strengthens shoulder armor's durability", cost: 2525117, gains: 202009, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Cloak Gem', description: "A mystical gem that enhances the cloak's protective properties", cost: 3787675, gains: 303014, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Neckless Gem', description: "A precious stone that amplifies the necklace's magical effects", cost: 5681513, gains: 454521, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ring Gem', description: "A tiny but potent gem that boosts the ring's enchantments", cost: 8522269, gains: 681782, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ring 2 Gem', description: 'Another small yet powerful gem enhancing the second ring', cost: 12783404, gains: 1022672, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Trinket Gem', description: "A unique gem that complements the trinket's magical abilities", cost: 19175106, gains: 1534008, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Trinket 2 Gem', description: "A rare stone that synergizes with the second trinket's powers", cost: 28762659, gains: 2301013, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Melee Weapon Enchant', description: 'A magical enhancement improving close-combat effectiveness', cost: 43143988, gains: 3451519, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ranged Weapon Enchant', description: 'An arcane upgrade boosting ranged attack capabilities', cost: 64715982, gains: 5177279, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Off-Hand Enchant', description: 'A mystical augmentation enhancing off-hand item performance', cost: 97073974, gains: 7765918, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Chest Enchant', description: "A powerful spell reinforcing the chest armor's protective qualities", cost: 145610961, gains: 11648877, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Pants Enchant', description: 'A magical enhancement improving leg armor\'s defensive capabilities', cost: 218416441, gains: 17473315, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Gloves Enchant', description: 'An arcane boost increasing hand-to-hand combat prowess', cost: 327624661, gains: 26209973, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Feet Enchant', description: 'A mystical upgrade enhancing agility and movement speed', cost: 491436992, gains: 39314959, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Belt Enchant', description: "A magical reinforcement boosting the wearer's overall stability", cost: 737155488, gains: 58972439, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Bracers Enchant', description: 'An arcane enhancement amplifying arm guard effectiveness', cost: 1105733232, gains: 88458659, multiplier: 1.2, faction: 'UNDEAD',imageUrl: ""},
+    { name: 'Shoulder Enchant', description: "A powerful spell strengthening shoulder armor's resilience", cost: 1658599848, gains: 132687988, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Cloak Enchant', description: "A mystical augmentation improving the cloak's protective qualities", cost: 2487899772, gains: 199031982, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Neckless Enchant', description: "An arcane boost amplifying the necklace's magical properties", cost: 3731849658, gains: 298547973, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Ring Enchant', description: "A potent spell enhancing the ring's mystical effects", cost: 5597774487, gains: 447821959, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Ring 2 Enchant', description: 'Another powerful enchantment boosting the second ring’s abilities', cost: 8396661731, gains: 671732938, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Trinket Enchant', description: "A unique magical enhancement complementing the trinket's powers", cost: 12594992597, gains: 1007599408, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Trinket 2 Enchant', description: "A rare arcane upgrade synergizing with the second trinket's abilities", cost: 18892488895, gains: 1511399112, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Melee Weapon Rune', description: 'Ancient symbols etched to enhance close-combat performance', cost: 28338733343, gains: 2267098667, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ranged Weapon Rune', description: 'Mystical markings inscribed to improve ranged attack precision', cost: 42508100014, gains: 3400648001, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Off-Hand Rune', description: 'Arcane glyphs carved to boost off-hand equipment effectiveness', cost: 63762150021, gains: 5100972002, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Chest Rune', description: "Powerful sigils engraved to reinforce chest armor's protective qualities", cost: 95643225032, gains: 7651458003, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Pants Rune', description: 'Magical runes etched to enhance leg armor\'s defensive capabilities', cost: 143464837548, gains: 11477187004, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Gloves Rune', description: 'Ancient symbols inscribed to improve hand-to-hand combat skills', cost: 215197256322, gains: 17215780506, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Feet Rune', description: 'Mystical markings carved to increase agility and sure-footedness', cost: 322795884483, gains: 25823670759, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Belt Rune', description: "Arcane glyphs engraved to bolster the wearer's core strength", cost: 484193826725, gains: 38735506138, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Bracers Rune', description: 'Powerful sigils etched to amplify the effectiveness of arm guards', cost: 726290740088, gains: 58103259207, multiplier: 1.2, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Shoulder Rune', description: "Magical runes inscribed to strengthen shoulder armor's durability", cost: 1089436110131, gains: 87154888811, multiplier: 1.2, faction: 'UNDEAD' ,imageUrl: ""}
 ];
 
 const soldierData = [
     // Orc Faction
-    { name: 'Kobold Slave', description: 'Weakest unit, used as meat shields.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Goblin Archer', description: 'Weak and fast ranged units.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Youngling', description: 'Low damage melee units.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Wolf Pack', description: 'Aggressive beasts, fast with light damage.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Grunt', description: 'Standard melee units.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Spearman', description: 'Effective against infantry.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Axeman', description: 'High damage melee units.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Hunter', description: 'High ranged damage.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Shaman', description: 'Support unit, heals and buffs.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Warlock', description: 'Cast offensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Troll', description: 'High health and damage, slow.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Harpie', description: 'Flying unit, fast with ranged attacks.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Spider Swarm', description: 'Numerous weak spiders.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Stone Giant', description: 'High health and damage, very slow.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Champion', description: 'Powerful units specializing in melee combat.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Warlord', description: 'Leaders of the army, very powerful.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Direwolve', description: 'Very strong and aggressive beasts.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Black Orc Warrior', description: 'Elite melee units.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Raider', description: 'Fast and strong.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Warlock Shamans', description: 'Powerful spellcasters with support abilities.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Orc Necromancer', description: 'Raise and control the dead.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Dragon Rider', description: 'Very powerful flying unit.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ORC' },
-    { name: 'Hell Lord', description: 'The strongest unit, demon-like creatures.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ORC' },
+    { name: 'Kobold Slave', description: 'Weakest unit, used as meat shields.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Goblin Archer', description: 'Weak and fast ranged units.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Youngling', description: 'Low damage melee units.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Wolf Pack', description: 'Aggressive beasts, fast with light damage.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Orc Grunt', description: 'Standard melee units.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Spearman', description: 'Effective against infantry.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Axeman', description: 'High damage melee units.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Hunter', description: 'High ranged damage.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Shaman', description: 'Support unit, heals and buffs.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Orc Warlock', description: 'Cast offensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Troll', description: 'High health and damage, slow.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Harpie', description: 'Flying unit, fast with ranged attacks.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Spider Swarm', description: 'Numerous weak spiders.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Stone Giant', description: 'High health and damage, very slow.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Orc Champion', description: 'Powerful units specializing in melee combat.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Warlord', description: 'Leaders of the army, very powerful.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Direwolve', description: 'Very strong and aggressive beasts.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Black Orc Warrior', description: 'Elite melee units.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Raider', description: 'Fast and strong.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Warlock Shamans', description: 'Powerful spellcasters with support abilities.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Orc Necromancer', description: 'Raise and control the dead.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Dragon Rider', description: 'Very powerful flying unit.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ORC',imageUrl: "" },
+    { name: 'Hell Lord', description: 'The strongest unit, demon-like creatures.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ORC' ,imageUrl: ""},
 // Human Faction
-    { name: 'Peasant', description: 'The weakest unit, used for resource gathering and last-resort defense.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Militia', description: 'Lightly armed and armored, useful for early game defense and reconnaissance.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Scout', description: 'Fast and agile units used for scouting and harassment.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Archer', description: 'Bow-wielding ranged units, effective against infantry and flying units.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Crossbowman', description: 'Crossbow-wielding ranged units, high damage but slower than archers.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Footman', description: 'Basic melee units with sword and shield, versatile and reliable.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Pikeman', description: 'Long spear-wielding melee units, effective against cavalry.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Priest', description: 'Support unit, heals and empowers allies with divine magic.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Longbowman', description: 'Long bow-wielding ranged units, high damage and long range.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Mage', description: 'Versatile and powerful, casting offensive and defensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Knight', description: 'Heavily armored cavalry units, effective against infantry.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Cavalry Archer', description: 'Mounted archers with high mobility and good damage output.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Assassin', description: 'Stealthy units with deadly poisons and surprise attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Battle Mage', description: 'Powerful mages specialized in offensive magic.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Inquisitor', description: 'Zealous warriors with holy powers, effective against undead.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Priest of Light', description: 'Powerful healers and empowerers with divine light magic.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Arcane Wizard', description: 'Powerful mages specialized in arcane magic.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Royal Guard', description: 'Elite melee units with heavy armor and powerful weapons.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Spellbreaker', description: 'Anti-magic units that disrupt enemy spells and enchantments.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Dragon Knight', description: 'Elite cavalry units riding dragons, devastating in battle.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Field Marshal', description: 'Leaders of the army, skilled tacticians and strategists.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Paladin', description: 'Holy warriors with divine powers, strong melee fighters and healers.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'HUMAN' },
-    { name: 'Titan', description: 'A legendary being of immense size, power, and durability, capable of devastating attacks and commanding armies.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'HUMAN' },
+    { name: 'Peasant', description: 'The weakest unit, used for resource gathering and last-resort defense.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Militia', description: 'Lightly armed and armored, useful for early game defense and reconnaissance.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Scout', description: 'Fast and agile units used for scouting and harassment.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Archer', description: 'Bow-wielding ranged units, effective against infantry and flying units.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Crossbowman', description: 'Crossbow-wielding ranged units, high damage but slower than archers.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Footman', description: 'Basic melee units with sword and shield, versatile and reliable.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Pikeman', description: 'Long spear-wielding melee units, effective against cavalry.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Priest', description: 'Support unit, heals and empowers allies with divine magic.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Longbowman', description: 'Long bow-wielding ranged units, high damage and long range.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Mage', description: 'Versatile and powerful, casting offensive and defensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Knight', description: 'Heavily armored cavalry units, effective against infantry.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Cavalry Archer', description: 'Mounted archers with high mobility and good damage output.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Assassin', description: 'Stealthy units with deadly poisons and surprise attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Battle Mage', description: 'Powerful mages specialized in offensive magic.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Inquisitor', description: 'Zealous warriors with holy powers, effective against undead.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Priest of Light', description: 'Powerful healers and empowerers with divine light magic.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Arcane Wizard', description: 'Powerful mages specialized in arcane magic.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Royal Guard', description: 'Elite melee units with heavy armor and powerful weapons.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Spellbreaker', description: 'Anti-magic units that disrupt enemy spells and enchantments.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Dragon Knight', description: 'Elite cavalry units riding dragons, devastating in battle.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Field Marshal', description: 'Leaders of the army, skilled tacticians and strategists.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Paladin', description: 'Holy warriors with divine powers, strong melee fighters and healers.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Titan', description: 'A legendary being of immense size, power, and durability, capable of devastating attacks and commanding armies.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'HUMAN',imageUrl: "" },
 
     // Elf Faction
-    { name: 'Dryad Sprite', description: 'Weakest unit, used as distractions.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Woodland Archer Scout', description: 'Weak but agile ranged units.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Militia', description: 'Low damage melee units with high agility.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Unicorn Charger', description: 'Swift and graceful beasts with light damage.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Swordsman', description: 'Standard melee units with balanced stats.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Spearman', description: 'Effective against infantry and cavalry.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Glaive Warrior', description: 'High damage melee units with extended reach.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Ranger', description: 'High ranged damage and stealth capabilities.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Priest', description: 'Support unit, heals and buffs allies.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Mage', description: 'Cast offensive and defensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Treant', description: 'High health and damage, slow but sturdy.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Hippogryph Rider', description: 'Flying unit, fast with ranged attacks.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Moon Panther Pack', description: 'Agile predators with deadly pounces.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Ancient Ent', description: 'High health and damage, very slow but powerful.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Blade Master', description: 'Powerful units specializing in melee combat.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven High Commander', description: 'Leaders of the army, skilled tacticians.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Great Eagle', description: 'Powerful aerial predators with sharp talons.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Royal Guard', description: 'Elite melee units with exceptional defense.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Elven Cavalry', description: 'Swift and skilled riders with lances.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'High Mage', description: 'Powerful spellcasters with a wide range of spells.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Priestess of the Moon', description: 'Healers and buffers with lunar magic.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Dragonhawk Rider', description: 'Aerial archers with high mobility.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ELF' },
-    { name: 'Avatar of Nature', description: 'The strongest unit, a manifestation of nature\'s power.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ELF' },
+    { name: 'Dryad Sprite', description: 'Weakest unit, used as distractions.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Woodland Archer Scout', description: 'Weak but agile ranged units.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven Militia', description: 'Low damage melee units with high agility.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Unicorn Charger', description: 'Swift and graceful beasts with light damage.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven Swordsman', description: 'Standard melee units with balanced stats.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven Spearman', description: 'Effective against infantry and cavalry.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven Glaive Warrior', description: 'High damage melee units with extended reach.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven Ranger', description: 'High ranged damage and stealth capabilities.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven Priest', description: 'Support unit, heals and buffs allies.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven Mage', description: 'Cast offensive and defensive spells.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Treant', description: 'High health and damage, slow but sturdy.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Hippogryph Rider', description: 'Flying unit, fast with ranged attacks.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Moon Panther Pack', description: 'Agile predators with deadly pounces.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ancient Ent', description: 'High health and damage, very slow but powerful.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven Blade Master', description: 'Powerful units specializing in melee combat.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven High Commander', description: 'Leaders of the army, skilled tacticians.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Great Eagle', description: 'Powerful aerial predators with sharp talons.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven Royal Guard', description: 'Elite melee units with exceptional defense.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Elven Cavalry', description: 'Swift and skilled riders with lances.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'High Mage', description: 'Powerful spellcasters with a wide range of spells.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Priestess of the Moon', description: 'Healers and buffers with lunar magic.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Dragonhawk Rider', description: 'Aerial archers with high mobility.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
+    { name: 'Avatar of Nature', description: 'The strongest unit, a manifestation of nature\'s power.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ELF',imageUrl: "" },
 
     // Demon Faction
-    { name: 'Imp', description: 'Weakest unit, used as distractions and for swarming.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Hell Imp', description: 'Weak ranged units with fire attacks.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Lesser Demon', description: 'Low damage melee units with high aggression.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Hellhound Pack', description: 'Fast and ferocious beasts with fiery attacks.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Demon Warrior', description: 'Standard melee units with decent damage and resilience.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Succubus Enchantress', description: 'Weaken enemies with charm and seduction.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Demon Berserker', description: 'High damage melee units with reckless abandon.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Gargoyle', description: 'Flying unit, fast with ranged attacks and stone skin.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Warlock', description: 'Cast offensive and defensive spells, summon lesser demons.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Infernal Mage', description: 'Powerful spellcasters specializing in fire and chaos magic.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    // Demon Faction (continued)
-    { name: 'Flesh Golem', description: 'High health and damage, slow but resistant to physical attacks.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Abyssal Fiend', description: 'Flying unit, strong melee attackers with demonic aura.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Shadow Demon Assassin', description: 'Stealthy units with deadly surprise attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Balrog', description: 'High health and damage, wield fiery whips and swords.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Demon Champion', description: 'Powerful melee units with demonic powers and armor.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Demon Overlord', description: 'Leaders of the army, skilled tacticians and powerful warriors.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Soul Eaters', description: 'Flying creatures that drain the life force of enemies.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Bloodthirster Demon', description: 'Elite melee units with insatiable bloodlust.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Hell Knight', description: 'Mounted warriors with demonic steeds and fiery weapons.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Archdemon', description: 'Powerful spellcasters with devastating area-of-effect spells.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Succubi Queen', description: 'Command lesser demons, seduce and control enemies.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Pit Lord', description: 'Massive demons with immense strength and fiery breath.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'DEMON' },
-    { name: 'Demon Prince', description: 'The strongest unit, a high-ranking demon with immense power.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'DEMON' },
+    { name: 'Imp', description: 'Weakest unit, used as distractions and for swarming.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Hell Imp', description: 'Weak ranged units with fire attacks.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Lesser Demon', description: 'Low damage melee units with high aggression.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Hellhound Pack', description: 'Fast and ferocious beasts with fiery attacks.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Demon Warrior', description: 'Standard melee units with decent damage and resilience.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Succubus Enchantress', description: 'Weaken enemies with charm and seduction.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demon Berserker', description: 'High damage melee units with reckless abandon.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Gargoyle', description: 'Flying unit, fast with ranged attacks and stone skin.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Warlock', description: 'Cast offensive and defensive spells, summon lesser demons.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Infernal Mage', description: 'Powerful spellcasters specializing in fire and chaos magic.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Flesh Golem', description: 'High health and damage, slow but resistant to physical attacks.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Abyssal Fiend', description: 'Flying unit, strong melee attackers with demonic aura.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Shadow Demon Assassin', description: 'Stealthy units with deadly surprise attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Balrog', description: 'High health and damage, wield fiery whips and swords.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Demon Champion', description: 'Powerful melee units with demonic powers and armor.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demon Overlord', description: 'Leaders of the army, skilled tacticians and powerful warriors.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Soul Eaters', description: 'Flying creatures that drain the life force of enemies.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Bloodthirster Demon', description: 'Elite melee units with insatiable bloodlust.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Hell Knight', description: 'Mounted warriors with demonic steeds and fiery weapons.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
+    { name: 'Archdemon', description: 'Powerful spellcasters with devastating area-of-effect spells.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Succubi Queen', description: 'Command lesser demons, seduce and control enemies.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Pit Lord', description: 'Massive demons with immense strength and fiery breath.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demon Prince', description: 'The strongest unit, a high-ranking demon with immense power.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'DEMON',imageUrl: "" },
 
     // Angel Faction
-    { name: 'Cherub', description: 'Weakest unit, used for healing and support.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Divine Archer', description: 'Ranged units with holy arrows.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Seraphim Warrior', description: 'Low damage melee units with high defense.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Pegasus Rider', description: 'Flying unit with swift attacks and healing abilities.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Angelic Guard', description: 'Standard melee units with balanced stats.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Virtue', description: 'Melee units with holy maces, effective against demons.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Archangel', description: 'High damage melee units with divine powers.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Avenging Angel', description: 'Ranged units with holy spears, high damage output.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Cleric', description: 'Support unit, heals and buffs allies with holy magic.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Seraphim Mage', description: 'Cast offensive and defensive spells with divine energy.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Guardian Angel', description: 'High health and damage, slow but sturdy protectors.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Throne', description: 'Flying unit, strong melee attackers with radiant auras.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Divine Avenger', description: 'Elite melee units with holy weapons and powerful attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Seraphim Elder', description: 'High health and damage, wise leaders with powerful spells.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Seraphim Champion', description: 'Powerful melee units with radiant wings and holy swords.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Angelic Commander', description: 'Leaders of the army, skilled tacticians and warriors.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Griffon Rider', description: 'Flying unit with swift attacks and powerful claws.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Dominion', description: 'Elite melee units with divine armor and powerful auras.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Celestial Cavalry', description: 'Mounted warriors with holy lances and divine steeds.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'High Seraphim', description: 'Powerful spellcasters with devastating holy magic.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Virtues of Valor', description: 'Powerful melee units with holy shields and auras of protection.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'Archangels of Justice', description: 'Powerful melee units with holy swords and wings of light.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ANGEL' },
-    { name: 'The Divine Avatar', description: 'The strongest unit, a manifestation of divine power and light.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ANGEL' },
+    { name: 'Cherub', description: 'Weakest unit, used for healing and support.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Archer', description: 'Ranged units with holy arrows.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Seraphim Warrior', description: 'Low damage melee units with high defense.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Pegasus Rider', description: 'Flying unit with swift attacks and healing abilities.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Angelic Guard', description: 'Standard melee units with balanced stats.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Virtue', description: 'Melee units with holy maces, effective against demons.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Archangel', description: 'High damage melee units with divine powers.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Avenging Angel', description: 'Ranged units with holy spears, high damage output.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Cleric', description: 'Support unit, heals and buffs allies with holy magic.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Seraphim Mage', description: 'Cast offensive and defensive spells with divine energy.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Guardian Angel', description: 'High health and damage, slow but sturdy protectors.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Throne', description: 'Flying unit, strong melee attackers with radiant auras.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Avenger', description: 'Elite melee units with holy weapons and powerful attacks.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Seraphim Elder', description: 'High health and damage, wise leaders with powerful spells.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Seraphim Champion', description: 'Powerful melee units with radiant wings and holy swords.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Angelic Commander', description: 'Leaders of the army, skilled tacticians and warriors.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Griffon Rider', description: 'Flying unit with swift attacks and powerful claws.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Dominion', description: 'Elite melee units with divine armor and powerful auras.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Celestial Cavalry', description: 'Mounted warriors with holy lances and divine steeds.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'High Seraphim', description: 'Powerful spellcasters with devastating holy magic.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Virtues of Valor', description: 'Powerful melee units with holy shields and auras of protection.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Archangels of Justice', description: 'Powerful melee units with holy swords and wings of light.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'ANGEL',imageUrl: "" },
+    { name: 'The Divine Avatar', description: 'The strongest unit, a manifestation of divine power and light.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'ANGEL' ,imageUrl: ""},
 
     // Undead Faction
-    { name: 'Skeleton', description: 'Weakest unit, numerous and expendable.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Zombie', description: 'Slow and weak melee units with high numbers.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
+    { name: 'Skeleton', description: 'Weakest unit, numerous and expendable.', cost: 506, gains: 30, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Zombie', description: 'Slow and weak melee units with high numbers.', cost: 1341, gains: 80, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
     // Undead Faction (continued)
-    { name: 'Skeleton Archer', description: 'Ranged units with low damage but long range.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Ghoul', description: 'Faster melee units with a poisonous bite.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Crypt Ghoul', description: 'Stronger melee units with regeneration abilities.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Necromancer', description: 'Spellcasters who summon and control undead units.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Wraith', description: 'Ethereal units with chilling touch and life drain.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Wight', description: 'Powerful melee units with fear aura and life drain.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Banshee', description: 'Ethereal units with a wail that causes fear and weakens enemies.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Skeletal Champion', description: 'Stronger skeletal warriors with increased damage.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Abomination', description: 'Hulking constructs made of stitched-together corpses.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Revenant', description: 'Powerful melee units driven by vengeance, difficult to kill.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Vampire Knight', description: 'Elite mounted units with blood magic and powerful charges.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Bone Dragon', description: 'Flying units with skeletal frames and chilling breath.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Death Knight', description: 'Powerful mounted units with necrotic aura and weapons.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Lich', description: 'Powerful spellcasters with mastery over death magic.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Tomb King', description: 'Ancient rulers resurrected with powerful spells and artifacts.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Spectres', description: 'Ethereal units with high damage and possession abilities.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Banshee Queen', description: 'Powerful banshees with enhanced wails and control over lesser banshees.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Death Mage', description: 'High-level spellcasters specializing in necromancy.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Bone Giant', description: 'Massive skeletal constructs with immense strength and devastating attacks.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Soul Reaper', description: 'Elite specters with devastating scythes and life-draining abilities.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
-    { name: 'Dread Necromancer', description: 'The strongest unit, a master necromancer with dominion over the undead, surpassing even the Lich King in power and malevolence.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'UNDEAD' },
+    { name: 'Skeleton Archer', description: 'Ranged units with low damage but long range.', cost: 3553, gains: 211, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Ghoul', description: 'Faster melee units with a poisonous bite.', cost: 9416, gains: 558, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Crypt Ghoul', description: 'Stronger melee units with regeneration abilities.', cost: 24954, gains: 1479, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Necromancer', description: 'Spellcasters who summon and control undead units.', cost: 66127, gains: 3921, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Wraith', description: 'Ethereal units with chilling touch and life drain.', cost: 175237, gains: 10390, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Wight', description: 'Powerful melee units with fear aura and life drain.', cost: 464378, gains: 27532, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Banshee', description: 'Ethereal units with a wail that causes fear and weakens enemies.', cost: 1230602, gains: 72961, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Skeletal Champion', description: 'Stronger skeletal warriors with increased damage.', cost: 3261094, gains: 193346, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Abomination', description: 'Hulking constructs made of stitched-together corpses.', cost: 8641900, gains: 512366, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Revenant', description: 'Powerful melee units driven by vengeance, difficult to kill.', cost: 22901036, gains: 1357769, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Vampire Knight', description: 'Elite mounted units with blood magic and powerful charges.', cost: 60687745, gains: 3598088, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Bone Dragon', description: 'Flying units with skeletal frames and chilling breath.', cost: 160822526, gains: 9534932, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Death Knight', description: 'Powerful mounted units with necrotic aura and weapons.', cost: 426179693, gains: 25267571, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Lich', description: 'Powerful spellcasters with mastery over death magic.', cost: 1129376186, gains: 66959062, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Tomb King', description: 'Ancient rulers resurrected with powerful spells and artifacts.', cost: 2992846892, gains: 177441515, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Spectres', description: 'Ethereal units with high damage and possession abilities.', cost: 7931044265, gains: 470220016, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Banshee Queen', description: 'Powerful banshees with enhanced wails and control over lesser banshees.', cost: 21017267301, gains: 1246083042, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Death Mage', description: 'High-level spellcasters specializing in necromancy.', cost: 55695758349, gains: 3302120060, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Bone Giant', description: 'Massive skeletal constructs with immense strength and devastating attacks.', cost: 147593759624, gains: 8750618160, costGainingMultiplier: 1.05, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Soul Reaper', description: 'Elite specters with devastating scythes and life-draining abilities.', cost: 391123463004, gains: 23189138123, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Dread Necromancer', description: 'The strongest unit, a master necromancer with dominion over the undead, surpassing even the Lich King in power and malevolence.', cost: 1036477176961, gains: 61451216025, costGainingMultiplier: 1.05, faction: 'UNDEAD',imageUrl: "" },
 ];
 
 const spellData = [
     // Orc Faction
-    { name: 'Warcry Energy', description: 'A channeled spell that gradually increases the damage and attack speed of nearby Orc units', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Green Tide', description: 'Summons a horde of lesser Orcs to swarm and overwhelm the enemy', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Rock Lobber', description: 'Hurls a massive boulder at a target location, dealing heavy damage and knocking back enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Firestorm', description: 'Calls down a rain of flaming meteors, setting the battlefield ablaze and causing panic', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Blood Boil', description: 'Infects enemy units with a rage-inducing disease, causing them to attack friend and foe alike', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Ironhide Aura', description: 'Grants nearby Orc units increased armor and damage resistance', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Spirit Shield', description: 'Creates a protective barrier that absorbs incoming damage for a short duration', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Troll Regeneration', description: 'Enhances the natural regenerative abilities of Orc Trolls', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Ground Slam', description: 'Creates a shockwave that stuns and damages nearby enemies', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'War Chant', description: 'Inspires nearby Orc units, increasing their morale and resistance to fear', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Feral Speed', description: 'Increases the movement speed of Orc units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Blood Scent', description: 'Reveals the location of hidden enemies within a certain radius', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Shamanistic Ward', description: 'Protects friendly units from harmful spells and effects', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Call of the Steppes', description: 'Summons wild beasts to fight alongside the Orcs', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Vision Quest', description: 'Grants the caster temporary vision of the entire battlefield', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Enfeeblement', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Vulnerability', description: 'Increases the damage taken by enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Confusion', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Rotting Touch', description: 'Inflicts a disease on enemy units, causing them to slowly decay and weaken', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Bane of Weakblood', description: 'Curses enemy units, reducing their strength and agility', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'War God\'s Might', description: 'Summons a powerful avatar of Gork (or Mork) to wreak havoc on the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'The Great Warcry', description: 'A massive, channeled spell that significantly increases the power and size of the entire Orc army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Rupturing Earth', description: 'Creates fissures in the earth that erupt with molten rock, dealing damage and creating obstacles', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Blood Moon', description: 'Turns the sky blood red, granting Orc units increased strength and ferocity at night', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Ancestral Fury', description: 'Calls upon the spirits of Orc ancestors to possess and empower Orc units', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Blood Sacrifice', description: 'Sacrifices a portion of the Orc army to temporarily empower the remaining units', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ORC' },
-    { name: 'Summon Greater Demon', description: 'Summons a powerful demon to fight alongside the Orcs, but at a great cost', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ORC' },
+    { name: 'Warcry Energy', description: 'A channeled spell that gradually increases the damage and attack speed of nearby Orc units', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Green Tide', description: 'Summons a horde of lesser Orcs to swarm and overwhelm the enemy', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Rock Lobber', description: 'Hurls a massive boulder at a target location, dealing heavy damage and knocking back enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Firestorm', description: 'Calls down a rain of flaming meteors, setting the battlefield ablaze and causing panic', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Blood Boil', description: 'Infects enemy units with a rage-inducing disease, causing them to attack friend and foe alike', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Ironhide Aura', description: 'Grants nearby Orc units increased armor and damage resistance', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Spirit Shield', description: 'Creates a protective barrier that absorbs incoming damage for a short duration', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Troll Regeneration', description: 'Enhances the natural regenerative abilities of Orc Trolls', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Ground Slam', description: 'Creates a shockwave that stuns and damages nearby enemies', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'War Chant', description: 'Inspires nearby Orc units, increasing their morale and resistance to fear', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Feral Speed', description: 'Increases the movement speed of Orc units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Blood Scent', description: 'Reveals the location of hidden enemies within a certain radius', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Shamanistic Ward', description: 'Protects friendly units from harmful spells and effects', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Call of the Steppes', description: 'Summons wild beasts to fight alongside the Orcs', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Vision Quest', description: 'Grants the caster temporary vision of the entire battlefield', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Enfeeblement', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Vulnerability', description: 'Increases the damage taken by enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Confusion', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Rotting Touch', description: 'Inflicts a disease on enemy units, causing them to slowly decay and weaken', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Bane of Weakblood', description: 'Curses enemy units, reducing their strength and agility', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'War God\'s Might', description: 'Summons a powerful avatar of Gork (or Mork) to wreak havoc on the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'The Great Warcry', description: 'A massive, channeled spell that significantly increases the power and size of the entire Orc army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Rupturing Earth', description: 'Creates fissures in the earth that erupt with molten rock, dealing damage and creating obstacles', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Blood Moon', description: 'Turns the sky blood red, granting Orc units increased strength and ferocity at night', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ORC',imageUrl: "" },
+    { name: 'Ancestral Fury', description: 'Calls upon the spirits of Orc ancestors to possess and empower Orc units', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Blood Sacrifice', description: 'Sacrifices a portion of the Orc army to temporarily empower the remaining units', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ORC' ,imageUrl: ""},
+    { name: 'Summon Greater Demon', description: 'Summons a powerful demon to fight alongside the Orcs, but at a great cost', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ORC' ,imageUrl: ""},
 // Human Faction
-    { name: 'Fireball', description: 'Hurls a fiery projectile that explodes on impact, dealing area damage', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Lightning Bolt', description: 'A swift bolt of lightning that strikes a single enemy, dealing high damage', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Ice Lance', description: 'A piercing shard of ice that pierces through multiple enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Arrow Volley', description: 'Unleashes a volley of arrows that rain down on a target area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Divine Wrath', description: 'Calls upon holy power to smite enemies with a beam of light', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Protective Aura', description: 'Creates a barrier of light that reduces incoming damage for nearby allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Healing Touch', description: 'Restores health to a single target', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Mass Heal', description: 'Heals multiple allies in an area', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Divine Shield', description: 'Grants a temporary shield to an ally, absorbing damage', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Aegis', description: 'Creates a safe zone where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Haste', description: 'Increases the movement speed of friendly units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Eagle Eye', description: 'Grants vision of a large area of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Teleportation', description: 'Allows the caster to teleport a short distance', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Inspire', description: 'Increases the morale and combat effectiveness of nearby allies', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Dispel Magic', description: 'Removes harmful magical effects from allies', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Curse of Weakness', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Slow', description: 'Reduces the movement and attack speed of enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Mindmaze', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Disarm', description: 'Temporarily disarms enemy units, preventing them from attacking', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Hex', description: 'Curses an enemy unit, inflicting random negative effects', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Meteor Storm', description: 'Calls down a barrage of meteors that deal massive damage to a large area', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Summon Champion', description: 'Summons a legendary hero to fight alongside the human army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Divine Intervention', description: 'Calls upon the power of the gods to protect and empower the human army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Time Warp', description: 'Temporarily slows down time for enemies, giving allies a significant advantage', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Chain Lightning', description: 'Unleashes a bolt of lightning that jumps between multiple enemies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Prayer of Protection', description: 'A powerful prayer that grants all allies increased resistance to damage', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'HUMAN' },
-    { name: 'Summon Angel', description: 'Calls upon a powerful angel to fight alongside the human army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'HUMAN' },
+    { name: 'Fireball', description: 'Hurls a fiery projectile that explodes on impact, dealing area damage', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Lightning Bolt', description: 'A swift bolt of lightning that strikes a single enemy, dealing high damage', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Ice Lance', description: 'A piercing shard of ice that pierces through multiple enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Arrow Volley', description: 'Unleashes a volley of arrows that rain down on a target area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Divine Wrath', description: 'Calls upon holy power to smite enemies with a beam of light', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Protective Aura', description: 'Creates a barrier of light that reduces incoming damage for nearby allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Healing Touch', description: 'Restores health to a single target', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Mass Heal', description: 'Heals multiple allies in an area', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Divine Shield', description: 'Grants a temporary shield to an ally, absorbing damage', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Aegis', description: 'Creates a safe zone where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Haste', description: 'Increases the movement speed of friendly units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Eagle Eye', description: 'Grants vision of a large area of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Teleportation', description: 'Allows the caster to teleport a short distance', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Inspire', description: 'Increases the morale and combat effectiveness of nearby allies', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Dispel Magic', description: 'Removes harmful magical effects from allies', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Curse of Weakness', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Slow', description: 'Reduces the movement and attack speed of enemy units', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Mindmaze', description: 'Causes enemy units to attack randomly, including their own allies', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Disarm', description: 'Temporarily disarms enemy units, preventing them from attacking', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Hex', description: 'Curses an enemy unit, inflicting random negative effects', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Meteor Storm', description: 'Calls down a barrage of meteors that deal massive damage to a large area', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: ""},
+    { name: 'Summon Champion', description: 'Summons a legendary hero to fight alongside the human army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Divine Intervention', description: 'Calls upon the power of the gods to protect and empower the human army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Time Warp', description: 'Temporarily slows down time for enemies, giving allies a significant advantage', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Chain Lightning', description: 'Unleashes a bolt of lightning that jumps between multiple enemies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'HUMAN',imageUrl: "" },
+    { name: 'Prayer of Protection', description: 'A powerful prayer that grants all allies increased resistance to damage', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
+    { name: 'Summon Angel', description: 'Calls upon a powerful angel to fight alongside the human army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'HUMAN' ,imageUrl: ""},
 
     // Elf Faction
-    { name: 'Arrow Storm', description: 'Summons a volley of arrows to rain down on a target area', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Entangling Roots', description: 'Roots erupt from the ground, ensnaring and damaging enemies', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Moonbeam', description: 'A concentrated beam of moonlight that burns and weakens enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Wrath of Nature', description: 'Summons a powerful nature spirit to attack enemies in an area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Sunfire', description: 'Calls down a blast of solar energy, dealing damage and blinding foes', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Forest\'s Embrace', description: 'Creates a protective barrier of vines and leaves around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Regeneration', description: 'Accelerates the natural healing of friendly units', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Thorns', description: 'Creates a thorny aura around allies, damaging attackers', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Nature\'s Shield', description: 'Summons a protective spirit to shield allies from harm', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Wind Wall', description: 'Creates a gust of wind that deflects projectiles and slows enemies', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Fleetfoot', description: 'Increases the movement speed of friendly units', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ELF' },
+    { name: 'Arrow Storm', description: 'Summons a volley of arrows to rain down on a target area', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Entangling Roots', description: 'Roots erupt from the ground, ensnaring and damaging enemies', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Moonbeam', description: 'A concentrated beam of moonlight that burns and weakens enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Wrath of Nature', description: 'Summons a powerful nature spirit to attack enemies in an area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Sunfire', description: 'Calls down a blast of solar energy, dealing damage and blinding foes', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Forest\'s Embrace', description: 'Creates a protective barrier of vines and leaves around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Regeneration', description: 'Accelerates the natural healing of friendly units', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Thorns', description: 'Creates a thorny aura around allies, damaging attackers', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Nature\'s Shield', description: 'Summons a protective spirit to shield allies from harm', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Wind Wall', description: 'Creates a gust of wind that deflects projectiles and slows enemies', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Fleetfoot', description: 'Increases the movement speed of friendly units', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
 // Elf Faction (continued)
-    { name: 'Farsight', description: 'Grants vision of a large area of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Tree of Life', description: 'Summons a tree that heals and provides cover for allies', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Call of the Wild', description: 'Summons animal allies to fight alongside the elves', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Moonwell', description: 'Creates a wellspring of magical energy that replenishes mana', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Sleep Spores', description: 'Releases spores that put enemies to sleep', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Entangle', description: 'Roots ensnare enemies, slowing their movement and attack speed', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Poisoned Arrows', description: 'Coats arrows with poison, causing damage over time', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Swarm of Insects', description: 'Summons a swarm of insects to harass and distract enemies', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Nature\'s Grasp', description: 'Roots erupt from the ground, pulling enemies towards a central point', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Ancient\'s Wrath', description: 'Summons a powerful ancient tree spirit to devastate the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Elven High Magic', description: 'A powerful spell that unleashes a cascade of nature magic, healing allies and damaging enemies', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Moon Goddess\'s Blessing', description: 'Calls upon the power of the moon goddess to empower and protect the elven army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Sunburst', description: 'A blinding flash of light that deals massive damage to enemies in a wide area', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Nature\'s Fury', description: 'Unleashes a devastating storm of wind, rain, and lightning', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Ritual of Rebirth', description: 'Sacrifices a unit to restore health and mana to the entire army', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ELF' },
-    { name: 'Summon Treant Guardians', description: 'Summons powerful treant guardians to protect the elven army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ELF' },
+    { name: 'Farsight', description: 'Grants vision of a large area of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Tree of Life', description: 'Summons a tree that heals and provides cover for allies', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Call of the Wild', description: 'Summons animal allies to fight alongside the elves', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Moonwell', description: 'Creates a wellspring of magical energy that replenishes mana', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Sleep Spores', description: 'Releases spores that put enemies to sleep', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Entangle', description: 'Roots ensnare enemies, slowing their movement and attack speed', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Poisoned Arrows', description: 'Coats arrows with poison, causing damage over time', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Swarm of Insects', description: 'Summons a swarm of insects to harass and distract enemies', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Nature\'s Grasp', description: 'Roots erupt from the ground, pulling enemies towards a central point', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ELF',imageUrl: "" },
+    { name: 'Ancient\'s Wrath', description: 'Summons a powerful ancient tree spirit to devastate the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Elven High Magic', description: 'A powerful spell that unleashes a cascade of nature magic, healing allies and damaging enemies', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Moon Goddess\'s Blessing', description: 'Calls upon the power of the moon goddess to empower and protect the elven army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Sunburst', description: 'A blinding flash of light that deals massive damage to enemies in a wide area', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Nature\'s Fury', description: 'Unleashes a devastating storm of wind, rain, and lightning', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Ritual of Rebirth', description: 'Sacrifices a unit to restore health and mana to the entire army', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
+    { name: 'Summon Treant Guardians', description: 'Summons powerful treant guardians to protect the elven army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ELF' ,imageUrl: ""},
 
     // Demon Faction
-    { name: 'Hellfire Bolt', description: 'Hurls a bolt of hellfire that burns and damages a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Demonic Swarm', description: 'Summons a swarm of lesser demons to attack and overwhelm enemies', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Shadow Bolt', description: 'Launches a bolt of shadow energy that pierces through armor and inflicts pain', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Unholy Blast', description: 'Unleashes a wave of unholy energy that damages and weakens enemies in an area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Chaos Bolt', description: 'A chaotic blast of energy that deals random damage and inflicts various debuffs', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Demonic Shield', description: 'Creates a protective barrier of demonic energy around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Unholy Armor', description: 'Enhances the armor and resistance of friendly units', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Soul Drain', description: 'Drains the life essence of enemies, healing the caster and nearby allies', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Shadow Cloak', description: 'Conceals friendly units in shadows, making them harder to detect and attack', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Dark Pact', description: 'Sacrifices a portion of the caster\'s health to gain a temporary boost in power', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Infernal Gateway', description: 'Opens a temporary portal that allows demons to quickly reinforce the battlefield', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Demonic Possession', description: 'Takes control of an enemy unit, turning it against its allies', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Unholy Ground', description: 'Corrupts the ground, dealing damage over time to enemies who stand on it', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Blood Frenzy', description: 'Enrages friendly units, increasing their attack speed and damage but reducing their defense', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Shadow Step', description: 'Allows the caster to teleport a short distance, surprising enemies and escaping danger', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Curse of Agony', description: 'Inflicts intense pain on enemy units, reducing their movement speed and attack', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Fear', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Corruption', description: 'Corrupts enemy units, turning them against their allies or weakening their abilities', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Soul Siphon', description: 'Drains the souls of enemies, weakening them and empowering the caster', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'DEMON' },
+    { name: 'Hellfire Bolt', description: 'Hurls a bolt of hellfire that burns and damages a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demonic Swarm', description: 'Summons a swarm of lesser demons to attack and overwhelm enemies', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Shadow Bolt', description: 'Launches a bolt of shadow energy that pierces through armor and inflicts pain', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Unholy Blast', description: 'Unleashes a wave of unholy energy that damages and weakens enemies in an area', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Chaos Bolt', description: 'A chaotic blast of energy that deals random damage and inflicts various debuffs', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Demonic Shield', description: 'Creates a protective barrier of demonic energy around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Unholy Armor', description: 'Enhances the armor and resistance of friendly units', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Soul Drain', description: 'Drains the life essence of enemies, healing the caster and nearby allies', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Shadow Cloak', description: 'Conceals friendly units in shadows, making them harder to detect and attack', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Dark Pact', description: 'Sacrifices a portion of the caster\'s health to gain a temporary boost in power', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Infernal Gateway', description: 'Opens a temporary portal that allows demons to quickly reinforce the battlefield', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demonic Possession', description: 'Takes control of an enemy unit, turning it against its allies', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Unholy Ground', description: 'Corrupts the ground, dealing damage over time to enemies who stand on it', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Blood Frenzy', description: 'Enrages friendly units, increasing their attack speed and damage but reducing their defense', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Shadow Step', description: 'Allows the caster to teleport a short distance, surprising enemies and escaping danger', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Curse of Agony', description: 'Inflicts intense pain on enemy units, reducing their movement speed and attack', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Fear', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Corruption', description: 'Corrupts enemy units, turning them against their allies or weakening their abilities', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Soul Siphon', description: 'Drains the souls of enemies, weakening them and empowering the caster', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
     // Demon Faction (continued)
-    { name: 'Demonic Pact', description: 'Offers a tempting bargain to enemy units, corrupting them and turning them into demons', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Demonic Avatar', description: 'Summons a powerful demon lord to wreak havoc on the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Inferno', description: 'Unleashes a massive inferno that engulfs the battlefield in flames', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Cataclysm', description: 'Creates a devastating earthquake that shatters the ground and damages all units in the area', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Unholy Resurrection', description: 'Raises fallen demons from the dead, strengthening the demon army', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Hellstorm', description: 'A powerful vortex of souls that damages and weakens enemies while empowering allies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Blood Ritual', description: 'Sacrifices a portion of the demon army to gain a temporary boost in power and summon a powerful demon', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'DEMON' },
-    { name: 'Summoning Circle', description: 'Creates a summoning circle that allows the caster to summon powerful demons from the depths of hell', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'DEMON' },
+    { name: 'Demonic Pact', description: 'Offers a tempting bargain to enemy units, corrupting them and turning them into demons', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Demonic Avatar', description: 'Summons a powerful demon lord to wreak havoc on the battlefield', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Inferno', description: 'Unleashes a massive inferno that engulfs the battlefield in flames', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Cataclysm', description: 'Creates a devastating earthquake that shatters the ground and damages all units in the area', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Unholy Resurrection', description: 'Raises fallen demons from the dead, strengthening the demon army', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Hellstorm', description: 'A powerful vortex of souls that damages and weakens enemies while empowering allies', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
+    { name: 'Blood Ritual', description: 'Sacrifices a portion of the demon army to gain a temporary boost in power and summon a powerful demon', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'DEMON',imageUrl: "" },
+    { name: 'Summoning Circle', description: 'Creates a summoning circle that allows the caster to summon powerful demons from the depths of hell', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'DEMON' ,imageUrl: ""},
 
     // Angel Faction
-    { name: 'Holy Smite', description: 'A powerful blast of holy energy that smites a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Divine Lance', description: 'Launches a piercing lance of light that damages multiple enemies in a line', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Radiant Burst', description: 'Unleashes a burst of radiant energy that damages and blinds nearby enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Celestial Fire', description: 'Calls down a rain of holy fire, burning and purifying evil', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Seraph\'s Wrath', description: 'Summons a seraph to unleash a devastating attack on a target area', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Divine Protection', description: 'Creates a protective barrier of holy light around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Holy Aura', description: 'Grants increased armor and resistance to holy damage to nearby allies', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Healing', description: 'A powerful healing spell that restores health to a single target', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Resurrection', description: 'Brings a fallen ally back to life with a portion of their health restored', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Sanctuary', description: 'Creates a safe haven where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Angelic Wings', description: 'Grants temporary flight to friendly units', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Divine Guidance', description: 'Reveals the location of hidden enemies and grants vision of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Blessing of Light', description: 'Empowers friendly units with increased damage and attack speed', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Holy Ground', description: 'Purifies the ground, healing allies and damaging undead or demonic enemies', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Celestial Beacon', description: 'Summons a beacon of light that heals and inspires nearby allies', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Smite Evil', description: 'Deals bonus damage to undead and demonic units', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Banish', description: 'Banishes an enemy unit from the battlefield for a short duration', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Blinding Light', description: 'Temporarily blinds enemies, reducing their accuracy and attack power', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Holy Word Silence', description: 'Silences enemy spellcasters, preventing them from casting spells for a short duration', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Divine Retribution', description: 'Curses enemy units, causing them to take damage whenever they attack', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Wrath of God', description: 'Summons a powerful avatar of divine wrath to smite enemies', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Heavenly Host', description: 'Calls upon a legion of angels to descend from the heavens and fight alongside the player\'s army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Divine Judgement', description: 'Unleashes a powerful beam of holy energy that deals massive damage to a large area', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Sacred Ground', description: 'Blesses the ground, making it impossible for enemies to enter the area for a short duration', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Angelic Ascension', description: 'Temporarily transforms the player\'s hero into an archangel, granting them immense power and abilities', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Prayer of Healing', description: 'A powerful healing ritual that restores a large amount of health to all friendly units', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ANGEL' },
-    { name: 'Rite of Purification', description: 'A ritual that cleanses the battlefield of corruption and evil, weakening enemy units and empowering allies', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ANGEL' },
+    { name: 'Holy Smite', description: 'A powerful blast of holy energy that smites a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Lance', description: 'Launches a piercing lance of light that damages multiple enemies in a line', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Radiant Burst', description: 'Unleashes a burst of radiant energy that damages and blinds nearby enemies', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Celestial Fire', description: 'Calls down a rain of holy fire, burning and purifying evil', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Seraph\'s Wrath', description: 'Summons a seraph to unleash a devastating attack on a target area', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Protection', description: 'Creates a protective barrier of holy light around allies', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Holy Aura', description: 'Grants increased armor and resistance to holy damage to nearby allies', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Healing', description: 'A powerful healing spell that restores health to a single target', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Resurrection', description: 'Brings a fallen ally back to life with a portion of their health restored', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Sanctuary', description: 'Creates a safe haven where allies cannot be harmed for a short duration', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Angelic Wings', description: 'Grants temporary flight to friendly units', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Divine Guidance', description: 'Reveals the location of hidden enemies and grants vision of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Blessing of Light', description: 'Empowers friendly units with increased damage and attack speed', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Holy Ground', description: 'Purifies the ground, healing allies and damaging undead or demonic enemies', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Celestial Beacon', description: 'Summons a beacon of light that heals and inspires nearby allies', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Smite Evil', description: 'Deals bonus damage to undead and demonic units', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Banish', description: 'Banishes an enemy unit from the battlefield for a short duration', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Blinding Light', description: 'Temporarily blinds enemies, reducing their accuracy and attack power', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Holy Word Silence', description: 'Silences enemy spellcasters, preventing them from casting spells for a short duration', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Retribution', description: 'Curses enemy units, causing them to take damage whenever they attack', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Wrath of God', description: 'Summons a powerful avatar of divine wrath to smite enemies', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Heavenly Host', description: 'Calls upon a legion of angels to descend from the heavens and fight alongside the player\'s army', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Divine Judgement', description: 'Unleashes a powerful beam of holy energy that deals massive damage to a large area', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Sacred Ground', description: 'Blesses the ground, making it impossible for enemies to enter the area for a short duration', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Angelic Ascension', description: 'Temporarily transforms the player\'s hero into an archangel, granting them immense power and abilities', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'ANGEL',imageUrl: "" },
+    { name: 'Prayer of Healing', description: 'A powerful healing ritual that restores a large amount of health to all friendly units', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
+    { name: 'Rite of Purification', description: 'A ritual that cleanses the battlefield of corruption and evil, weakening enemy units and empowering allies', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'ANGEL' ,imageUrl: ""},
 
     // Undead Faction (continued)
-    { name: 'Death Bolt', description: 'Launches a bolt of necrotic energy that damages and weakens a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Raise Dead', description: 'Summons a group of skeletons or zombies to fight for the undead army', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Corpse Explosion', description: 'Causes a corpse to explode, dealing area damage and spreading disease', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Unholy Blight', description: 'Creates a cloud of blight that damages and weakens enemies over time', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Soul Harvest', description: 'Drains the life force of multiple enemies, healing the caster and nearby undead', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Bone Shield', description: 'Creates a protective barrier of bones around the caster, absorbing damage', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Unholy Aura', description: 'Grants increased armor and resistance to holy damage to nearby undead', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Spectral Grasp', description: 'Summons spectral hands that pull enemies towards the caster', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Death\'s Embrace', description: 'Envelops a target ally in a protective aura that heals them over time', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Dark Ritual', description: 'Sacrifices a portion of the undead army to temporarily empower the remaining units', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Unholy Speed', description: 'Increases the movement speed of undead units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Death\'s Sight', description: 'Reveals the location of hidden enemies and grants vision of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Corpse Puppet', description: 'Takes control of a corpse, turning it into a temporary undead minion', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Summon Wraith', description: 'Summons a wraith to fight alongside the undead army', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Necromantic Barrier', description: 'Creates a wall of bones that blocks enemy movement', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Withering Touch', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Horror', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Curse of Frailty', description: 'Curses enemy units, making them more vulnerable to damage', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Life Drain', description: 'Drains the life essence of an enemy unit, healing the caster', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Death\'s Mark', description: 'Marks an enemy unit for death, causing them to take increased damage', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Army of the Dead', description: 'Raises a vast army of skeletons and zombies to overwhelm the enemy', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Death and Decay', description: 'Creates a zone of decay that deals damage over time and weakens enemies', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Lich\'s Phylactery', description: 'Summons a powerful lich to fight alongside the undead army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Unholy Frenzy', description: 'Enrages undead units, increasing their attack speed and damage but reducing their defense', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Soulstorm', description: 'Unleashes a storm of souls that damages and weakens enemies while healing undead units', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Rite of Unlife', description: 'Resurrects a powerful undead hero from the grave', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'UNDEAD' },
-    { name: 'Summon Bone Dragon', description: 'Summons a skeletal dragon to fight alongside the undead army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'UNDEAD' }
+    { name: 'Death Bolt', description: 'Launches a bolt of necrotic energy that damages and weakens a single target', cost: 1139, gains: 80, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Raise Dead', description: 'Summons a group of skeletons or zombies to fight for the undead army', cost: 2164, gains: 152, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Corpse Explosion', description: 'Causes a corpse to explode, dealing area damage and spreading disease', cost: 4112, gains: 289, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Unholy Blight', description: 'Creates a cloud of blight that damages and weakens enemies over time', cost: 7812, gains: 549, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Soul Harvest', description: 'Drains the life force of multiple enemies, healing the caster and nearby undead', cost: 14844, gains: 1043, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Bone Shield', description: 'Creates a protective barrier of bones around the caster, absorbing damage', cost: 28203, gains: 1981, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Unholy Aura', description: 'Grants increased armor and resistance to holy damage to nearby undead', cost: 53585, gains: 3764, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Spectral Grasp', description: 'Summons spectral hands that pull enemies towards the caster', cost: 101812, gains: 7151, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Death\'s Embrace', description: 'Envelops a target ally in a protective aura that heals them over time', cost: 193443, gains: 13587, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Dark Ritual', description: 'Sacrifices a portion of the undead army to temporarily empower the remaining units', cost: 367541, gains: 25815, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Unholy Speed', description: 'Increases the movement speed of undead units for a short duration', cost: 698328, gains: 49049, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Death\'s Sight', description: 'Reveals the location of hidden enemies and grants vision of the battlefield', cost: 1326824, gains: 93192, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Corpse Puppet', description: 'Takes control of a corpse, turning it into a temporary undead minion', cost: 2520966, gains: 177065, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Summon Wraith', description: 'Summons a wraith to fight alongside the undead army', cost: 4789835, gains: 336424, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Necromantic Barrier', description: 'Creates a wall of bones that blocks enemy movement', cost: 9100686, gains: 639205, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Withering Touch', description: 'Weakens enemy units, reducing their attack and defense', cost: 17291304, gains: 1214490, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Horror', description: 'Strikes terror into the hearts of enemies, causing them to flee in panic', cost: 32853477, gains: 2307531, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Curse of Frailty', description: 'Curses enemy units, making them more vulnerable to damage', cost: 62421606, gains: 4384309, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Life Drain', description: 'Drains the life essence of an enemy unit, healing the caster', cost: 118601052, gains: 8330188, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Death\'s Mark', description: 'Marks an enemy unit for death, causing them to take increased damage', cost: 225341999, gains: 15827357, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Army of the Dead', description: 'Raises a vast army of skeletons and zombies to overwhelm the enemy', cost: 428149798, gains: 30071979, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Death and Decay', description: 'Creates a zone of decay that deals damage over time and weakens enemies', cost: 813484616, gains: 57136760, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Lich\'s Phylactery', description: 'Summons a powerful lich to fight alongside the undead army', cost: 1545620770, gains: 108559843, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Unholy Frenzy', description: 'Enrages undead units, increasing their attack speed and damage but reducing their defense', cost: 2936679462, gains: 206263702, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Soulstorm', description: 'Unleashes a storm of souls that damages and weakens enemies while healing undead units', cost: 5579690978, gains: 391901034, costGainingMultiplier: 1.3, faction: 'UNDEAD' ,imageUrl: ""},
+    { name: 'Rite of Unlife', description: 'Resurrects a powerful undead hero from the grave', cost: 10601412859, gains: 744611966, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" },
+    { name: 'Summon Bone Dragon', description: 'Summons a skeletal dragon to fight alongside the undead army', cost: 20142684432, gains: 1414762734, costGainingMultiplier: 1.3, faction: 'UNDEAD',imageUrl: "" }
 ];
 
 const artifactData = [
@@ -866,7 +864,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'ORC',
-        id: 26
+        id: 26,
+        imageUrl: ""
     },
     {
         name: 'The Blood Chalice of Mauller',
@@ -875,7 +874,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'ORC',
-        id: 27
+        id: 27,
+        imageUrl: ""
     },
     {
         name: 'The Banner of the Wars',
@@ -884,7 +884,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'ORC',
-        id: 28
+        id: 28,
+        imageUrl: ""
     },
     {
         name: 'The Mask of the Beastlord',
@@ -893,7 +894,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'ORC',
-        id: 29
+        id: 29,
+        imageUrl: ""
     },
     {
         name: 'The Heart of the Volcano',
@@ -902,7 +904,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'ORC',
-        id: 30
+        id: 30,
+        imageUrl: ""
     },
 
     // Human Artifacts
@@ -913,7 +916,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'HUMAN',
-        id:1
+        id:1,
+        imageUrl: ""
     },
     {
         name: 'The Blade of the Crusader',
@@ -922,7 +926,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'HUMAN',
-        id:2
+        id:2,
+        imageUrl: ""
     },
     {
         name: 'The Shield of the Defender',
@@ -931,7 +936,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'HUMAN',
-        id:3
+        id:3,
+        imageUrl: ""
     },
     {
         name: 'The Tome of Arcane Knowledge',
@@ -940,7 +946,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'HUMAN',
-        id:4
+        id:4,
+        imageUrl: ""
     },
     {
         name: 'The Amulet of the Dragonheart',
@@ -949,7 +956,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'HUMAN',
-        id:5
+        id:5,
+        imageUrl: ""
     },
 
     // Elf Artifacts
@@ -960,7 +968,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'ELF',
-        id:6
+        id:6,
+        imageUrl: ""
     },
     {
         name: 'The Moonstone of Elore',
@@ -969,7 +978,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'ELF',
-        id:7
+        id:7,
+        imageUrl: ""
     },
     {
         name: 'The Horn of the Wild Hunt',
@@ -978,7 +988,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'ELF',
-        id:8
+        id:8,
+        imageUrl: ""
     },
     {
         name: 'The Elven Crown of Thorns',
@@ -987,7 +998,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'ELF',
-        id:9
+        id:9,
+        imageUrl: ""
     },
     {
         name: 'The Heart of the Forest',
@@ -996,7 +1008,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'ELF',
-        id:10
+        id:10,
+        imageUrl: ""
     },
 // Demon Artifacts
     {
@@ -1006,7 +1019,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'DEMON',
-        id:11
+        id:11,
+        imageUrl: ""
     },
     {
         name: 'The Bloodstone of Zargan',
@@ -1015,7 +1029,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'DEMON',
-        id:12
+        id:12,
+        imageUrl: ""
     },
     {
         name: 'The Banner of the Abyss',
@@ -1024,7 +1039,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'DEMON',
-        id: 13
+        id: 13,
+        imageUrl: ""
     },
     {
         name: 'The Helm of the Archbalrog',
@@ -1033,7 +1049,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'DEMON',
-        id: 14
+        id: 14,
+        imageUrl: ""
     },
     {
         name: 'The Grimoire of the Devil',
@@ -1042,7 +1059,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'DEMON',
-        id: 15
+        id: 15,
+        imageUrl: ""
     },
 
     // Angel Artifacts
@@ -1053,7 +1071,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'ANGEL',
-        id: 16
+        id: 16,
+        imageUrl: ""
     },
     {
         name: 'The Spear of Leonginus',
@@ -1062,7 +1081,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'ANGEL',
-        id: 17
+        id: 17,
+        imageUrl: ""
     },
     {
         name: 'The Wings of Gabriel',
@@ -1071,7 +1091,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'ANGEL',
-        id: 18
+        id: 18,
+        imageUrl: ""
     },
     {
         name: 'The Halo of Seraphim',
@@ -1080,7 +1101,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'ANGEL',
-        id: 19
+        id: 19,
+        imageUrl: ""
     },
     {
         name: 'The Sword of Michael',
@@ -1089,7 +1111,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'ANGEL',
-        id: 20
+        id: 20,
+        imageUrl: ""
     },
 
     // Undead Artifacts
@@ -1100,7 +1123,8 @@ const artifactData = [
         gains: 3835021,
         costGainingMultiplier: 2,
         faction: 'UNDEAD',
-        id: 21
+        id: 21,
+        imageUrl: ""
     },
     {
         name: 'The Crown of the Night King',
@@ -1109,7 +1133,8 @@ const artifactData = [
         gains: 80535445,
         costGainingMultiplier: 2,
         faction: 'UNDEAD',
-        id: 22
+        id: 22,
+        imageUrl: ""
     },
     {
         name: 'The Book of the Damned',
@@ -1118,7 +1143,8 @@ const artifactData = [
         gains: 1691244342,
         costGainingMultiplier: 2,
         faction: 'UNDEAD',
-        id: 23
+        id: 23,
+        imageUrl: ""
     },
     {
         name: 'The Shroud of the Banshee Queen',
@@ -1127,7 +1153,8 @@ const artifactData = [
         gains: 35516131191,
         costGainingMultiplier: 2,
         faction: 'UNDEAD',
-        id: 24
+        id: 24,
+        imageUrl: ""
     },
     {
         name: 'The Soul Cage of the Necropolis',
@@ -1136,7 +1163,8 @@ const artifactData = [
         gains: 745838755013,
         costGainingMultiplier: 2,
         faction: 'UNDEAD',
-        id: 25
+        id: 25,
+        imageUrl: ""
     }
 ];
 
@@ -1206,6 +1234,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'skill',
+        imageUrl: ""
     },
     {
         name: 'Mana Pool',
@@ -1218,6 +1247,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'skill',
+        imageUrl: ""
     },
     {
         name: 'Attack Crit Chance',
@@ -1230,6 +1260,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'skill',
+        imageUrl: ""
     },
     {
         name: 'Attack Crit Income',
@@ -1242,6 +1273,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'skill',
+        imageUrl: ""
     },
     {
         name: 'Mana Potion',
@@ -1254,6 +1286,7 @@ const skillBuffData = [
         cooldown: '2 hour',
         refresh: '24 hour',
         type: 'potion',
+        imageUrl: ""
     },
     {
         name: "Magic God's Blood Potion",
@@ -1266,6 +1299,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'item',
+        imageUrl: ""
     },
     {
         name: "Hero's Pocket Portal",
@@ -1278,6 +1312,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'item',
+        imageUrl: ""
     },
     {
         name: "Army's Raid Portal",
@@ -1290,6 +1325,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'item',
+        imageUrl: ""
     },
     {
         name: "The Ancient's Transformation Ritual",
@@ -1302,6 +1338,7 @@ const skillBuffData = [
         cooldown: '',
         refresh: '',
         type: 'spell',
+        imageUrl: ""
     },
 ];
 
@@ -1328,7 +1365,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Ancient Grove",
@@ -1337,7 +1375,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Infernal Pit",
@@ -1346,7 +1385,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Celestial Temple",
@@ -1355,7 +1395,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Crypt",
@@ -1364,7 +1405,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Town Center",
@@ -1373,7 +1415,8 @@ const armoryData = [
         "gains": 450,
         "costGainingMultiplier": 1.8,
         "armoryId": 1,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Forge",
@@ -1382,7 +1425,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Moonwell",
@@ -1391,7 +1435,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Sacrificial Altar",
@@ -1400,7 +1445,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Holy Fountain",
@@ -1409,7 +1455,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Boneyard",
@@ -1418,7 +1465,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Barracks",
@@ -1427,7 +1475,8 @@ const armoryData = [
         "gains": 585,
         "costGainingMultiplier": 1.8,
         "armoryId": 2,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Spirit Lodge",
@@ -1436,7 +1485,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Hunter's Lodge",
@@ -1445,7 +1495,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Torture Chamber",
@@ -1454,7 +1505,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Judgement Hall",
@@ -1463,7 +1515,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Spirit Tower",
@@ -1472,7 +1525,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Archery Range",
@@ -1481,7 +1535,8 @@ const armoryData = [
         "gains": 761,
         "costGainingMultiplier": 1.8,
         "armoryId": 3,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Bestiary",
@@ -1490,7 +1545,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Wild Sanctuary",
@@ -1499,7 +1555,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Blight Nest",
@@ -1508,7 +1565,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Aviary of Light",
@@ -1517,7 +1575,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Necropolis",
@@ -1526,7 +1585,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Stable",
@@ -1535,7 +1595,8 @@ const armoryData = [
         "gains": 989,
         "costGainingMultiplier": 1.8,
         "armoryId": 4,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Great Hall",
@@ -1544,7 +1605,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Elven Citadel",
@@ -1553,7 +1615,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demon Citadel",
@@ -1562,7 +1625,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Heavenly Citadel",
@@ -1571,7 +1635,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Unholy Cathedral",
@@ -1580,7 +1645,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Mage Tower",
@@ -1589,7 +1655,8 @@ const armoryData = [
         "gains": 1285,
         "costGainingMultiplier": 1.8,
         "armoryId": 5,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Serrated Blades",
@@ -1598,7 +1665,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Elven Steel",
@@ -1607,7 +1675,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demonic Steel",
@@ -1616,7 +1685,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Celestial Forging",
@@ -1625,7 +1695,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Cursed Blades",
@@ -1634,7 +1705,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Enchanted Steel",
@@ -1643,7 +1715,8 @@ const armoryData = [
         "gains": 1671,
         "costGainingMultiplier": 1.8,
         "armoryId": 6,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Poisoned Tips",
@@ -1652,7 +1725,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Moonstone Arrows",
@@ -1661,7 +1735,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Soul-Stealing Blades",
@@ -1670,7 +1745,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Holy Light Infusion",
@@ -1679,7 +1755,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Soul-Siphoning Weapons",
@@ -1688,7 +1765,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Hawkeye's Sight",
@@ -1697,7 +1775,8 @@ const armoryData = [
         "gains": 2172,
         "costGainingMultiplier": 1.8,
         "armoryId": 7,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Flaming Munitions",
@@ -1706,7 +1785,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Enchanted Blades",
@@ -1715,7 +1795,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Hellfire Infusion",
@@ -1724,7 +1805,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Angelic Feathers",
@@ -1733,7 +1815,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Blight-Infused Arrows",
@@ -1742,7 +1825,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Piercing Bolts",
@@ -1751,7 +1835,8 @@ const armoryData = [
         "gains": 2824,
         "costGainingMultiplier": 1.8,
         "armoryId": 8,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Rune-Inscribed Weapons",
@@ -1760,7 +1845,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Nature's Wrath",
@@ -1769,7 +1855,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Corrupted Runes",
@@ -1778,7 +1865,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Blessings of the Divine",
@@ -1787,7 +1875,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Spectral Touch",
@@ -1796,7 +1885,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Elemental Arrows",
@@ -1805,7 +1895,8 @@ const armoryData = [
         "gains": 3671,
         "costGainingMultiplier": 1.8,
         "armoryId": 9,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Berserker Axes",
@@ -1814,7 +1905,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Starfire Arrows",
@@ -1823,7 +1915,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demonic Claws",
@@ -1832,7 +1925,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Seraphim Blades",
@@ -1841,7 +1935,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Bone Reaver",
@@ -1850,7 +1945,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Holy Avenger",
@@ -1859,7 +1955,8 @@ const armoryData = [
         "gains": 4772,
         "costGainingMultiplier": 1.8,
         "armoryId": 10,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Spiked Armor",
@@ -1868,7 +1965,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Leafweave Armor",
@@ -1877,7 +1975,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Spiked Hide",
@@ -1886,7 +1985,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Divine Raiment",
@@ -1895,7 +1995,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Bone Plating",
@@ -1904,7 +2005,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Padded Gambeson",
@@ -1913,7 +2015,8 @@ const armoryData = [
         "gains": 6204,
         "costGainingMultiplier": 1.8,
         "armoryId": 11,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Trollhide Armor",
@@ -1922,7 +2025,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Moonsilver Armor",
@@ -1931,7 +2035,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demonic Plate",
@@ -1940,7 +2045,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Celestial Plate",
@@ -1949,7 +2055,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Ethereal Shroud",
@@ -1958,7 +2065,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Chainmail Reinforcement",
@@ -1967,7 +2075,8 @@ const armoryData = [
         "gains": 8065,
         "costGainingMultiplier": 1.8,
         "armoryId": 12,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Black Iron Plate",
@@ -1976,7 +2085,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Dragon Scale Armor",
@@ -1985,7 +2095,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Shadow Mantle",
@@ -1994,7 +2105,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Wings of Light",
@@ -2003,7 +2115,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Dark Ritual Armor",
@@ -2012,7 +2125,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Plate Armor Plating",
@@ -2021,7 +2135,8 @@ const armoryData = [
         "gains": 10484,
         "costGainingMultiplier": 1.8,
         "armoryId": 13,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Warlord's Regalia",
@@ -2030,7 +2145,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Sentinel's Raiment",
@@ -2039,7 +2155,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Overlord's Regalia",
@@ -2048,7 +2165,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Archangel's Armor",
@@ -2057,7 +2175,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Lich's Robes",
@@ -2066,7 +2185,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Paladin's Blessing",
@@ -2075,7 +2195,8 @@ const armoryData = [
         "gains": 13629,
         "costGainingMultiplier": 1.8,
         "armoryId": 14,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Shaman's Garb",
@@ -2084,7 +2205,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Druid's Vestments",
@@ -2093,7 +2215,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Warlock's Robes",
@@ -2102,7 +2225,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Healer's Robes",
@@ -2111,7 +2235,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Vampire's Cloak",
@@ -2120,7 +2245,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Mage's Robes",
@@ -2129,7 +2255,8 @@ const armoryData = [
         "gains": 17718,
         "costGainingMultiplier": 1.8,
         "armoryId": 15,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Throwing Axes",
@@ -2138,7 +2265,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Elven Cloaks",
@@ -2147,7 +2275,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Hellfire Grenades",
@@ -2156,7 +2285,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Holy Relics",
@@ -2165,7 +2295,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Blight Bombs",
@@ -2174,7 +2305,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Improved Shields",
@@ -2183,7 +2315,8 @@ const armoryData = [
         "gains": 23034,
         "costGainingMultiplier": 1.8,
         "armoryId": 16,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Grappling Hooks",
@@ -2192,7 +2325,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Treetop Walkers",
@@ -2201,7 +2335,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demonic Wings",
@@ -2210,7 +2345,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Divine Aegis",
@@ -2219,7 +2355,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Soul Gems",
@@ -2228,7 +2365,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Horse Breeder",
@@ -2237,7 +2375,8 @@ const armoryData = [
         "gains": 29944,
         "costGainingMultiplier": 1.8,
         "armoryId": 17,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "War Banners",
@@ -2246,7 +2385,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Nature's Boon",
@@ -2255,7 +2395,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Banner of Torment",
@@ -2264,7 +2405,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Banner of Righteousness",
@@ -2273,7 +2415,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Banner of Undeath",
@@ -2282,7 +2425,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Banner of Courage",
@@ -2291,7 +2435,8 @@ const armoryData = [
         "gains": 38927,
         "costGainingMultiplier": 1.8,
         "armoryId": 18,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Totem of Protection",
@@ -2300,7 +2445,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Elven Song",
@@ -2309,7 +2455,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Soul Cage",
@@ -2318,7 +2465,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Angelic Trumpets",
@@ -2327,7 +2475,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Necromantic Scrolls",
@@ -2336,7 +2485,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Healing Potions",
@@ -2345,7 +2495,8 @@ const armoryData = [
         "gains": 50605,
         "costGainingMultiplier": 1.8,
         "armoryId": 19,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
     {
         "name": "Drums of Rage",
@@ -2354,7 +2505,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 1
+        "factionId": 1,
+        "imageUrl": ""
     },
     {
         "name": "Moonstone Amulets",
@@ -2363,7 +2515,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 2
+        "factionId": 2,
+        "imageUrl": ""
     },
     {
         "name": "Demonic Rituals",
@@ -2372,7 +2525,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 3
+        "factionId": 3,
+        "imageUrl": ""
     },
     {
         "name": "Divine Intervention",
@@ -2381,7 +2535,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 4
+        "factionId": 4,
+        "imageUrl": ""
     },
     {
         "name": "Tombstone Ward",
@@ -2390,7 +2545,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 5
+        "factionId": 5,
+        "imageUrl": ""
     },
     {
         "name": "Mana Potions",
@@ -2399,7 +2555,8 @@ const armoryData = [
         "gains": 65786,
         "costGainingMultiplier": 1.8,
         "armoryId": 20,
-        "factionId": 6
+        "factionId": 6,
+        "imageUrl": ""
     },
 ];
 
