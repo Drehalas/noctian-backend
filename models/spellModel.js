@@ -27,7 +27,9 @@ const spellSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: ['HUMAN', 'UNDEAD', 'ANGEL', 'DEMON', 'ELF', 'ORC']
-    }
+    },
+    imageUrl: { type: String, required: false } // New field
+
 });
 
 // Spell Model

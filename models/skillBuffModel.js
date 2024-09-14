@@ -35,7 +35,8 @@ const skillBuffSchema = new mongoose.Schema({
     },
     refresh: {
         type: String, // String to accommodate time formats like "24 hour"
-    }
+    },
+    imageUrl: { type: String, required: false } // New field
 });
 
 module.exports = mongoose.model('SkillBuff', skillBuffSchema);

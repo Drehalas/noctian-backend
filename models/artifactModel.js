@@ -35,7 +35,9 @@ const artifactSchema = new mongoose.Schema({
     raidIncomePerHour: {
         type: Number,
         default: 0
-    }
+    },
+    imageUrl: { type: String, required: false } // New field
+
 });
 
 // Artifact Model
